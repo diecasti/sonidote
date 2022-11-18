@@ -8,20 +8,24 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Tree_0Mat 1
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_ValidKeywords:
+  m_Shader: {fileID: -6465566751694194690, guid: 4a2c85ee405ad244caec9b916e567c22, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords:
   - _DETAIL_MULX2
-  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap:
     RenderType: Opaque
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Albedo:
+        m_Texture: {fileID: 2800000, guid: a70423f726779cc46944256eb407d39c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: a70423f726779cc46944256eb407d39c, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -54,6 +58,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: ccd086a10d674f343b0fc1872f292ec3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -82,7 +90,9 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _Blend: 0
+    - _Blend_Strenght: 1
     - _BumpScale: 1
+    - _CastShadows: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
@@ -98,6 +108,7 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Smoothness: 0
@@ -107,10 +118,13 @@ Material:
     - _Surface: 0
     - _UVSec: 0
     - _WorkflowMode: 1
+    - _ZTest: 4
     - _ZWrite: 1
+    - _ZWriteControl: 0
     m_Colors:
     - _BaseColor: {r: 0.9063317, g: 0.9063317, b: 0.9063317, a: 1}
     - _Color: {r: 0.9063317, g: 0.9063317, b: 0.9063317, a: 1}
+    - _Direction: {r: 1, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
