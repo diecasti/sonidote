@@ -15,10 +15,30 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638048457449752291
+  lastModified: 638051054389533469
   FileSizes:
   - Name: Desktop
     Value: 1036
+  Exists: 1
+--- !u!114 &-2950281596854180055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Sounds.bank
+  m_EditorClassIdentifier: 
+  Path: Proyecto/Build/Desktop/Sounds.bank
+  Name: Sounds
+  StudioPath: bank:/Sounds
+  lastModified: 638051054440378679
+  FileSizes:
+  - Name: Desktop
+    Value: 716096
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -35,13 +55,16 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 301143784063883820}
   - {fileID: -4577728602309866515}
-  EditorEvents: []
+  - {fileID: -2950281596854180055}
+  EditorEvents:
+  - {fileID: 6671072067075862845}
+  - {fileID: 8585997589945577392}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4577728602309866515}
   StringsBanks:
   - {fileID: 301143784063883820}
-  cacheTime: 638048457449762300
+  cacheTime: 638051054440378679
   cacheVersion: 131593
 --- !u!114 &301143784063883820
 MonoBehaviour:
@@ -58,8 +81,62 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638048457449762300
+  lastModified: 638051054389702950
   FileSizes:
   - Name: Desktop
-    Value: 712
+    Value: 852
   Exists: 1
+--- !u!114 &6671072067075862845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/tumadre
+  m_EditorClassIdentifier: 
+  Path: event:/tumadre
+  Guid:
+    Data1: -1570286856
+    Data2: 1087157231
+    Data3: -937360717
+    Data4: 1544724624
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 30275
+--- !u!114 &8585997589945577392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/fire
+  m_EditorClassIdentifier: 
+  Path: event:/fire
+  Guid:
+    Data1: -1441504259
+    Data2: 1144262209
+    Data3: -752229751
+    Data4: 1983115732
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 28656
