@@ -16,11 +16,18 @@ public class Casco : MonoBehaviour
 
     LensDistortion Distorsion;
 
+    FMOD.Studio.EventInstance abrir;
+    FMOD.Studio.EventInstance cerrar;
+    FMOD.Studio.EventInstance respiracion;
+
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         luz = transform.GetChild(0).gameObject;
+        abrir = FMODUnity.RuntimeManager.CreateInstance("event:/abrir_casco");
+        cerrar = FMODUnity.RuntimeManager.CreateInstance("event:/cerrar_casco");
+        respiracion = FMODUnity.RuntimeManager.CreateInstance("event:/respirar");
     }
 
     // Update is called once per frame
@@ -36,9 +43,13 @@ public class Casco : MonoBehaviour
             //configuracion_casco();
 
             if (abierto)
+            {
                 anim.SetTrigger("close");
+            }
             else
+            {
                 anim.SetTrigger("open");
+            }
             abierto = !abierto;
         }
         if(!abierto)
@@ -58,5 +69,16 @@ public class Casco : MonoBehaviour
         post_procesado.profile.TryGet<LensDistortion>(out lente_casco);
 
         lente_casco.active = !abierto;
+    }
+
+    void sonido_abrir()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/abrir_casco");
+        respiracion.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
+    void sonido_cerrar()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/cerrar_casco");
+        respiracion.start();
     }
 }

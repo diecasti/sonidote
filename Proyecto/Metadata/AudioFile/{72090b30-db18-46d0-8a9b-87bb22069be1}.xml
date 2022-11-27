@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{72090b30-db18-46d0-8a9b-87bb22069be1}">
+		<property name="assetPath">
+			<value>respiracion_normal.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>18.672000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7e841238-9cb3-422b-a5d8-66bb96a370a5}</destination>
+		</relationship>
+	</object>
+</objects>
