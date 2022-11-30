@@ -42,11 +42,38 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638051886328310383
+  lastModified: 638054333649846714
   FileSizes:
   - Name: Desktop
-    Value: 1036
+    Value: 2918
   Exists: 1
+--- !u!114 &-4047568499504075508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/New Snapshot
+  m_EditorClassIdentifier: 
+  Path: snapshot:/New Snapshot
+  Guid:
+    Data1: 144152595
+    Data2: 1121536298
+    Data3: 1463062934
+    Data4: -493384426
+  Banks:
+  - {fileID: -4577728602309866515}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-2950281596854180055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,10 +89,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Sounds.bank
   Name: Sounds
   StudioPath: bank:/Sounds
-  lastModified: 638051886373932010
+  lastModified: 638054333650185575
   FileSizes:
   - Name: Desktop
-    Value: 1961280
+    Value: 1961504
   Exists: 1
 --- !u!114 &-2667288601634693277
 MonoBehaviour:
@@ -117,12 +144,15 @@ MonoBehaviour:
   - {fileID: 366526649288975443}
   - {fileID: -2667288601634693277}
   - {fileID: 7598754811715593074}
-  EditorParameters: []
+  - {fileID: -4047568499504075508}
+  - {fileID: 3972777691201824294}
+  EditorParameters:
+  - {fileID: 2303356358715460305}
   MasterBanks:
   - {fileID: -4577728602309866515}
   StringsBanks:
   - {fileID: 301143784063883820}
-  cacheTime: 638051886373932010
+  cacheTime: 638054333650185575
   cacheVersion: 131593
 --- !u!114 &301143784063883820
 MonoBehaviour:
@@ -139,10 +169,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638051886328469862
+  lastModified: 638054333649856678
   FileSizes:
   - Name: Desktop
-    Value: 1016
+    Value: 1242
   Exists: 1
 --- !u!114 &366526649288975443
 MonoBehaviour:
@@ -171,6 +201,57 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1344
+--- !u!114 &2303356358715460305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/casco
+  m_EditorClassIdentifier: 
+  Name: casco
+  StudioPath: parameter:/casco
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2473548194
+    data2: 3227526448
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &3972777691201824294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Normal
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Normal
+  Guid:
+    Data1: -1284462711
+    Data2: 1287777972
+    Data3: -51731541
+    Data4: -1434964360
+  Banks:
+  - {fileID: -4577728602309866515}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &6671072067075862845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,7 +305,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 18000
+  Length: 28000
 --- !u!114 &8585997589945577392
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -74,10 +74,12 @@ public class Casco : MonoBehaviour
     void sonido_abrir()
     {
         FMODUnity.RuntimeManager.PlayOneShot("event:/abrir_casco");
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("casco",0,true);
         respiracion.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
     void sonido_cerrar()
     {
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("casco",1,true);
         FMODUnity.RuntimeManager.PlayOneShot("event:/cerrar_casco");
         respiracion.start();
     }
