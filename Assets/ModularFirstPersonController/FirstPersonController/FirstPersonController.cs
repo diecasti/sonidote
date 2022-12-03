@@ -90,6 +90,11 @@ public class FirstPersonController : MonoBehaviour
     private bool isSprintCooldown = false;
     private float sprintCooldownReset;
 
+    //jetpack
+    public float combustibleSeconds = 0.0f;
+    public float CombustibleMax = 5.0f;
+
+
     #endregion
 
     #region Jump
@@ -326,13 +331,19 @@ public class FirstPersonController : MonoBehaviour
 
         #region Jump
 
+        if (isGrounded)
+        {
+            // Regain combustible while not sprinting
+            combustibleSeconds = Mathf.Clamp(combustibleSeconds += 1 * Time.deltaTime, 0, CombustibleMax);
+        }
+
         // Gets input and calls jump method
         if(enableJump && Input.GetKeyDown(jumpKey) && isGrounded)
         {
             Jump();
         }
 
-        if (enableJump && Input.GetKey(jumpKey) && !isGrounded)
+        if (Input.GetKey(jumpKey) && !isGrounded)
         {
             //propulsor
             fly();
@@ -484,17 +495,22 @@ public class FirstPersonController : MonoBehaviour
 
     private void fly()
     {
-        // Adds force to the player rigidbody to fly
-        if (!isGrounded)
+        if (combustibleSeconds > 0)
         {
-            rb.AddForce(0f, flyPower, 0f, ForceMode.Force);
-            isGrounded = false;
-        }
 
-        // When crouched and using toggle system, will uncrouch for a fly
-        if (isCrouched && !holdToCrouch)
-        {
-            Crouch();
+            // Adds force to the player rigidbody to fly
+            if (!isGrounded)
+            {
+                rb.AddForce(0f, flyPower, 0f, ForceMode.Force);
+                isGrounded = false;
+                combustibleSeconds -= 1 * Time.deltaTime;
+            }
+
+            // When crouched and using toggle system, will uncrouch for a fly
+            if (isCrouched && !holdToCrouch)
+            {
+                Crouch();
+            }
         }
     }
 
@@ -751,8 +767,23 @@ public class FirstPersonController : MonoBehaviour
 
         #endregion
 
+
+        #region JetPack
+
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
+        GUILayout.Label("JetPack", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Bold, fontSize = 13 }, GUILayout.ExpandWidth(true));
+        EditorGUILayout.Space();
+
+
+        
+        fpc.CombustibleMax = EditorGUILayout.Slider(new GUIContent("Combustible Maximo", ""), fpc.CombustibleMax, 1, 20);
+        GUI.enabled = true;
+
+        #endregion
+
         //Sets any changes from the prefab
-        if(GUI.changed)
+        if (GUI.changed)
         {
             EditorUtility.SetDirty(fpc);
             Undo.RecordObject(fpc, "FPC Change");
