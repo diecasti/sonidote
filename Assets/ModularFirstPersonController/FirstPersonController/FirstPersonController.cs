@@ -132,6 +132,10 @@ public class FirstPersonController : MonoBehaviour
 
     #endregion
 
+
+    FMODUnity.StudioEventEmitter emisor_pasos;
+
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -148,6 +152,9 @@ public class FirstPersonController : MonoBehaviour
             sprintRemaining = sprintDuration;
             sprintCooldownReset = sprintCooldown;
         }
+
+        // Un find porque en este script no funcionan los Serializable
+        emisor_pasos = GameObject.Find("S_pasos").GetComponent<FMODUnity.StudioEventEmitter>();
     }
 
     void Start()
@@ -443,6 +450,17 @@ public class FirstPersonController : MonoBehaviour
 
                 rb.AddForce(velocityChange, ForceMode.VelocityChange);
             }
+
+            if (isWalking)
+            {
+                //SONIDO MOVERSE
+                if (!emisor_pasos.IsPlaying())
+                    emisor_pasos.Play();
+            }
+            else
+                emisor_pasos.Stop();
+            
+
         }
 
         #endregion
