@@ -2,7 +2,9 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum tipo_pisada { HIERBA, TIERRA, MADERA, ROCA, AGUA };
 
@@ -11,6 +13,8 @@ public class StepsSwap : MonoBehaviour
 
     [SerializeField]
     Terrain terrain;
+    [SerializeField]
+     TextMeshProUGUI testo;
 
     TerrainChecker checker;
 
@@ -57,6 +61,8 @@ public class StepsSwap : MonoBehaviour
                 material = tipo_pisada.AGUA;
                 break;
         }
+
+        testo.text = current_layer;
         return material;
     }
 }

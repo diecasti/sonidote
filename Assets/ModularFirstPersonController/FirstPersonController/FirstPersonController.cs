@@ -468,10 +468,11 @@ public class FirstPersonController : MonoBehaviour
 
             if (isWalking)
             {
-                check_footstep();
                 //SONIDO MOVERSE
                 if (!emisor_pasos.IsPlaying())
-                    emisor_pasos.Play();
+                {
+                    check_footstep();
+                }
             }
             else
                 emisor_pasos.Stop();
@@ -592,7 +593,10 @@ public class FirstPersonController : MonoBehaviour
     // Modifica el evento de fmod para cambiar el tipo de pisada
     private void check_footstep()
     {
+        emisor_pasos.Play();
+
         tipo_pisada material_terreno = footstep_swapper.CheckLayers();
+        Debug.Log(material_terreno);
         emisor_pasos.EventInstance.setParameterByName("terreno", (int)material_terreno);
     }
 }
