@@ -14,6 +14,7 @@ using UnityEngine.UI;
     using System.Net;
 #endif
 
+
 public class FirstPersonController : MonoBehaviour
 {
     private Rigidbody rb;
@@ -140,6 +141,7 @@ public class FirstPersonController : MonoBehaviour
 
 
     FMODUnity.StudioEventEmitter emisor_pasos;
+    StepsSwap footstep_swapper;
 
 
     private void Awake()
@@ -161,6 +163,7 @@ public class FirstPersonController : MonoBehaviour
 
         // Un find porque en este script no funcionan los Serializable
         emisor_pasos = GameObject.Find("S_pasos").GetComponent<FMODUnity.StudioEventEmitter>();
+        footstep_swapper = GetComponent<StepsSwap>();
     }
 
     void Start()
@@ -465,6 +468,7 @@ public class FirstPersonController : MonoBehaviour
 
             if (isWalking)
             {
+                check_footstep();
                 //SONIDO MOVERSE
                 if (!emisor_pasos.IsPlaying())
                     emisor_pasos.Play();
@@ -583,6 +587,13 @@ public class FirstPersonController : MonoBehaviour
             timer = 0;
             joint.localPosition = new Vector3(Mathf.Lerp(joint.localPosition.x, jointOriginalPos.x, Time.deltaTime * bobSpeed), Mathf.Lerp(joint.localPosition.y, jointOriginalPos.y, Time.deltaTime * bobSpeed), Mathf.Lerp(joint.localPosition.z, jointOriginalPos.z, Time.deltaTime * bobSpeed));
         }
+    }
+
+    // Modifica el evento de fmod para cambiar el tipo de pisada
+    private void check_footstep()
+    {
+        tipo_pisada material_terreno = footstep_swapper.CheckLayers();
+        emisor_pasos.EventInstance.setParameterByName("terreno", (int)material_terreno);
     }
 }
 

@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{dcb73728-5dec-4b1c-8993-4fb3b72d51fb}">
+		<property name="note">
+			<value>0 = hierba
+1 = tierra
+2 = madera
+3 = roca
+4 = agua</value>
+		</property>
 		<property name="assetPath">
 			<value>Footsteps - Essentials/Footsteps_Grass/Footsteps_Grass_Walk/Footsteps_Walk_Grass_Mono_07.wav</value>
 		</property>
