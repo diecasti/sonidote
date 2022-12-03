@@ -93,6 +93,7 @@ public class FirstPersonController : MonoBehaviour
     //jetpack
     public float combustibleSeconds = 0.0f;
     public float CombustibleMax = 5.0f;
+    public float JetPower = 1.0f;
 
 
     #endregion
@@ -501,7 +502,7 @@ public class FirstPersonController : MonoBehaviour
             // Adds force to the player rigidbody to fly
             if (!isGrounded)
             {
-                rb.AddForce(0f, flyPower, 0f, ForceMode.Force);
+                rb.AddForce(0f, JetPower, 0f, ForceMode.Force);
                 isGrounded = false;
                 combustibleSeconds -= 1 * Time.deltaTime;
             }
@@ -778,6 +779,7 @@ public class FirstPersonController : MonoBehaviour
 
         
         fpc.CombustibleMax = EditorGUILayout.Slider(new GUIContent("Combustible Maximo", ""), fpc.CombustibleMax, 1, 20);
+        fpc.JetPower = EditorGUILayout.Slider(new GUIContent("Jet Power", ""), fpc.JetPower, 0, 20);
         GUI.enabled = true;
 
         #endregion
