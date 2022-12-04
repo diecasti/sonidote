@@ -391,6 +391,17 @@ public class FirstPersonController : MonoBehaviour
         {
             HeadBob();
         }
+
+        if (isWalking)
+        {
+            //SONIDO MOVERSE
+            if (!emisor_pasos.IsPlaying())
+            {
+                check_footstep();
+            }
+        }
+        //else
+        //    emisor_pasos.Stop();
     }
 
     void FixedUpdate()
@@ -466,16 +477,7 @@ public class FirstPersonController : MonoBehaviour
                 rb.AddForce(velocityChange, ForceMode.VelocityChange);
             }
 
-            if (isWalking)
-            {
-                //SONIDO MOVERSE
-                if (!emisor_pasos.IsPlaying())
-                {
-                    check_footstep();
-                }
-            }
-            else
-                emisor_pasos.Stop();
+            
             
 
         }

@@ -34,12 +34,24 @@ public class StepsSwap : MonoBehaviour
         // Lanzamos un raycast para ver que tenemos debajo
         RaycastHit hit;
 
+        int layer_mask = LayerMask.GetMask("Wood");
+
         if(Physics.Raycast(transform.position, Vector3.down, out hit, 3))
         {
             // Si existe el terreno
             if(hit.transform.GetComponent<Terrain>())
             {
                 current_layer = checker.GetLayerName(transform.position, terrain);
+            }
+            // Si no existe miramos si esta sobre otra superficie 
+            else
+            {
+                if (hit.transform.gameObject.layer == LayerMask.NameToLayer("Wood"))
+                    current_layer = "wood_layer";
+                else if (hit.transform.gameObject.layer == LayerMask.NameToLayer("Rock"))
+                    current_layer = "rock_layer";
+                else if (hit.transform.gameObject.layer == LayerMask.NameToLayer("Water"))
+                    current_layer = "water_layer";
             }
         }
 

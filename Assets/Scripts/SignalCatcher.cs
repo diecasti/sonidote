@@ -26,7 +26,7 @@ public class SignalCatcher : MonoBehaviour
             //intesity[i] = CalculateAngle180_v3(this.transform.forward, (this.transform.position - objectives[i].transform.position).normalized);
             intesity[i] = worldToView(objectives[i].transform.position);
         }
-        Debug.Log(intesity[0]);
+        //Debug.Log(intesity[0]);
     }
 
     float angleDir(Vector3 fwd, Vector3 targetDir, Vector3 up)
@@ -41,9 +41,9 @@ public class SignalCatcher : MonoBehaviour
         Vector3 angle = Quaternion.FromToRotation(fromDir, toDir).eulerAngles;
 
         //if (angle > 180) { angle -= 360f; }
-        Debug.Log("x: " + angle.x);
+       /* Debug.Log("x: " + angle.x);
         Debug.Log("y: " +  angle.y);
-        Debug.Log("z: " + angle.z);
+        Debug.Log("z: " + angle.z);*/
 
         return 0;
     }

@@ -139,6 +139,7 @@
 		</relationship>
 	</object>
 	<object class="MultiSound" id="{ba97c9cf-9b6e-4862-be99-99d0262321be}">
+		<property name="name" />
 		<relationship name="sounds">
 			<destination>{e86beb9d-2c6d-4c3e-8647-514774e394fd}</destination>
 			<destination>{8d7a207d-d6b4-40e0-923c-c4774c58a509}</destination>
