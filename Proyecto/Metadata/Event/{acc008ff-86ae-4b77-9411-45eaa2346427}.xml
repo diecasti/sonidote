@@ -308,6 +308,7 @@
 		<property name="start">
 			<value>3</value>
 		</property>
+		<property name="name" />
 		<relationship name="sounds">
 			<destination>{e72468a0-f287-4590-a248-a7be53de9fa6}</destination>
 			<destination>{907ecc67-f15f-4ada-b87e-c37633e098c5}</destination>
