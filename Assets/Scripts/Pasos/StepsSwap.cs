@@ -14,7 +14,7 @@ public class StepsSwap : MonoBehaviour
     [SerializeField]
     Terrain terrain;
     [SerializeField]
-     TextMeshProUGUI testo;
+    TextMeshProUGUI testo;
 
     TerrainChecker checker;
 
@@ -33,9 +33,6 @@ public class StepsSwap : MonoBehaviour
         
         // Lanzamos un raycast para ver que tenemos debajo
         RaycastHit hit;
-
-        int layer_mask = LayerMask.GetMask("Wood");
-
         if(Physics.Raycast(transform.position, Vector3.down, out hit, 3))
         {
             // Si existe el terreno
@@ -43,7 +40,7 @@ public class StepsSwap : MonoBehaviour
             {
                 current_layer = checker.GetLayerName(transform.position, terrain);
             }
-            // Si no existe miramos si esta sobre otra superficie 
+            // Si no existe miramos si esta sobre otra superficie (una malla)
             else
             {
                 if (hit.transform.gameObject.layer == LayerMask.NameToLayer("Wood"))
