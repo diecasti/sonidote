@@ -54,10 +54,12 @@ public class Casco : MonoBehaviour
         }
         if(!abierto)
         {
+            // Linterna
             if(Input.GetKeyDown(KeyCode.R))
             {
-                luz.SetActive(luz_activa);
                 luz_activa = !luz_activa;
+                luz.SetActive(luz_activa);
+                sonido_linterna();
             }
         }
     }
@@ -82,5 +84,10 @@ public class Casco : MonoBehaviour
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("casco",1,true);
         FMODUnity.RuntimeManager.PlayOneShot("event:/cerrar_casco");
         respiracion.start();
+    }
+
+    void sonido_linterna()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/linterna");
     }
 }
