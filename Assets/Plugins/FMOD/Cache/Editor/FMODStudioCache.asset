@@ -1,32 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9175708093981596469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/tumadre
-  m_EditorClassIdentifier: 
-  Path: event:/tumadre
-  Guid:
-    Data1: -1570286856
-    Data2: 1087157231
-    Data3: -937360717
-    Data4: 1544724624
-  Banks:
-  - {fileID: -2950281596854180055}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 30275
 --- !u!114 &-6846074441032458582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,7 +42,7 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638058574311567594
+  lastModified: 638058867924873289
   FileSizes:
   - Name: Desktop
     Value: 2918
@@ -143,10 +116,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Sounds.bank
   Name: Sounds
   StudioPath: bank:/Sounds
-  lastModified: 638058574311787598
+  lastModified: 638058867941057652
   FileSizes:
   - Name: Desktop
-    Value: 8770048
+    Value: 8501088
   Exists: 1
 --- !u!114 &-1914131130492721400
 MonoBehaviour:
@@ -164,7 +137,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 1
-  Default: 0
+  Default: 1
   ID:
     data1: 1016807526
     data2: 4268168178
@@ -222,7 +195,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 28000
+  Length: 41500
 --- !u!114 &-1159360857245115704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,7 +275,6 @@ MonoBehaviour:
   - {fileID: -4361211345283493533}
   - {fileID: -6846074441032458582}
   - {fileID: 2514003887006931867}
-  - {fileID: -9175708093981596469}
   - {fileID: 2623740213282003601}
   - {fileID: 2555576168581753672}
   - {fileID: 5110253580663868440}
@@ -312,7 +284,7 @@ MonoBehaviour:
   - {fileID: -4577728602309866515}
   StringsBanks:
   - {fileID: 301143784063883820}
-  cacheTime: 638058574311787598
+  cacheTime: 638058867941057652
   cacheVersion: 131593
 --- !u!114 &301143784063883820
 MonoBehaviour:
@@ -329,10 +301,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638058574311567594
+  lastModified: 638058867925022934
   FileSizes:
   - Name: Desktop
-    Value: 1654
+    Value: 1616
   Exists: 1
 --- !u!114 &2303356358715460305
 MonoBehaviour:
@@ -434,7 +406,7 @@ MonoBehaviour:
   - {fileID: -2950281596854180055}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
   - {fileID: -1866526318189023048}
   - {fileID: -1914131130492721400}

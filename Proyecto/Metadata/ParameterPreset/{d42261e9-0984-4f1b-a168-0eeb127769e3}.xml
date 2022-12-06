@@ -19,7 +19,7 @@
 			<value>2</value>
 		</property>
 		<property name="initialValue">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="automators">
 			<destination>{d43cdefc-c0ae-45fc-936c-d56d6382c5b4}</destination>

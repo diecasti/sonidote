@@ -400,8 +400,8 @@ public class FirstPersonController : MonoBehaviour
                 check_footstep();
             }
         }
-        //else
-        //    emisor_pasos.Stop();
+        else
+            emisor_pasos.Stop();
     }
 
     void FixedUpdate()
@@ -600,11 +600,12 @@ public class FirstPersonController : MonoBehaviour
         tipo_pisada material_terreno = footstep_swapper.CheckLayers();
         Debug.Log(material_terreno);
         emisor_pasos.EventInstance.setParameterByName("terreno", (int)material_terreno);
+        //emisor_pasos.EventInstance.setParameterByName("CaminarCorrer", 0);
 
-        //if(isSprinting)
-            //emisor_pasos.EventInstance.setParameterByName("CaminarCorrer", 1);
-        //else
-            //emisor_pasos.EventInstance.setParameterByName("CaminarCorrer", 0);
+        if(isSprinting)
+            emisor_pasos.EventInstance.setParameterByName("CaminarCorrer", 1);
+        else
+            emisor_pasos.EventInstance.setParameterByName("CaminarCorrer", 0);
 
     }
 }
