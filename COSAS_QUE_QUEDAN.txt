@@ -1,0 +1,19 @@
+-SONIDO AMBIENTE DEL BOSQUE
+	-Sonidos puntuales del bosque como pajaros * andres
+
+-SONIDO MONCHILA PROPULSORA
+
+-SONIDO Y MOVIDA PARA EL RÍO
+
+-LOW_PASS EN LA CUEVA DE LA CASCADA
+
+-SIGNAL SU VIEJA
+	-Sacar / esconder pistola
+	-Interferencias
+	-Sonidos de las rocas y vainas 
+
+-SONIDOS NPCS?
+
+-MÚSICA BIEN PUESTA
+
+-PULIR PASOS Y ATERRIZAJE * andres

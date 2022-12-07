@@ -27,6 +27,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 85
+--- !u!114 &-5640338271204167561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ambiente_bosque/distancia_bosque
+  m_EditorClassIdentifier: 
+  Name: distancia_bosque
+  StudioPath: 
+  Min: 0
+  Max: 70
+  Default: 49
+  ID:
+    data1: 246019122
+    data2: 3365114332
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-4577728602309866515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,10 +66,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638058867924873289
+  lastModified: 638060297545597552
   FileSizes:
   - Name: Desktop
-    Value: 2918
+    Value: 2198144
   Exists: 1
 --- !u!114 &-4361211345283493533
 MonoBehaviour:
@@ -116,10 +140,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Sounds.bank
   Name: Sounds
   StudioPath: bank:/Sounds
-  lastModified: 638058867941057652
+  lastModified: 638060297601792310
   FileSizes:
   - Name: Desktop
-    Value: 8501088
+    Value: 8499840
   Exists: 1
 --- !u!114 &-1914131130492721400
 MonoBehaviour:
@@ -195,31 +219,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 41500
---- !u!114 &-1159360857245115704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ambiente_bosque/distancia
-  m_EditorClassIdentifier: 
-  Name: distancia
-  StudioPath: 
-  Min: 0
-  Max: 20
-  Default: 20
-  ID:
-    data1: 3782073980
-    data2: 2382547294
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
+  Length: 29000
 --- !u!114 &-478328782465859006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,17 +234,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/ambiente_bosque
   Guid:
-    Data1: 1880529698
-    Data2: 1128266498
-    Data3: 2016730039
-    Data4: 167189939
+    Data1: 1513649053
+    Data2: 1334545658
+    Data3: -417266291
+    Data4: 909843095
   Banks:
+  - {fileID: -4577728602309866515}
   - {fileID: -2950281596854180055}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -1159360857245115704}
+  - {fileID: -5640338271204167561}
   MinDistance: 1
   MaxDistance: 20
   Length: 180024
@@ -284,7 +285,7 @@ MonoBehaviour:
   - {fileID: -4577728602309866515}
   StringsBanks:
   - {fileID: 301143784063883820}
-  cacheTime: 638058867941057652
+  cacheTime: 638060297601792310
   cacheVersion: 131593
 --- !u!114 &301143784063883820
 MonoBehaviour:
@@ -301,10 +302,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638058867925022934
+  lastModified: 638060297545747155
   FileSizes:
   - Name: Desktop
-    Value: 1616
+    Value: 1622
   Exists: 1
 --- !u!114 &2303356358715460305
 MonoBehaviour:

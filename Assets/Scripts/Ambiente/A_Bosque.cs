@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class A_Bosque : MonoBehaviour
 {
     [SerializeField]
     Transform jugador;
+
+    [SerializeField]
+    TextMeshProUGUI distancia_t;
 
     FMODUnity.StudioEventEmitter ambiente_bosque;
 
@@ -19,10 +23,12 @@ public class A_Bosque : MonoBehaviour
     void Update()
     {
         Vector3 distancia = transform.position - jugador.position;
-        if (distancia.magnitude < 5)
-        {
-            Debug.Log("DEBeria ser 2d");
-            ambiente_bosque.EventInstance.setParameterByName("distancia", 0);
-        }
+        float valor_volumen = distancia.magnitude;
+        distancia_t.text = valor_volumen.ToString();
+
+        if(valor_volumen >= 70)
+            ambiente_bosque.EventInstance.setParameterByName("distancia_bosque", 70);
+        else
+            ambiente_bosque.EventInstance.setParameterByName("distancia_bosque", valor_volumen);
     }
 }
