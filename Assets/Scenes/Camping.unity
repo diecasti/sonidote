@@ -18622,11 +18622,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1396700929
-      Data2: 1266124462
-      Data3: -364572268
-      Data4: 660878498
-    Path: event:/pasos
+      Data1: 931598225
+      Data2: 1284270789
+      Data3: -1782437732
+      Data4: -476541001
+    Path: event:/pisadas_2
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -20187,7 +20187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &587595082
 Transform:
   m_ObjectHideFlags: 0
