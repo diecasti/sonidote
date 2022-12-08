@@ -1,6 +1,3 @@
--SONIDO AMBIENTE DEL BOSQUE
-	-Sonidos puntuales del bosque como pajaros * andres
-
 -SONIDO MONCHILA PROPULSORA
 
 -SONIDO Y MOVIDA PARA EL RÍO

@@ -1,5 +1,29 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7418988344395410494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/pisadas/CaminarCorrer
+  m_EditorClassIdentifier: 
+  Name: CaminarCorrer
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 1016807526
+    data2: 4268168178
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-6846074441032458582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27,6 +51,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 85
+--- !u!114 &-6597598689672572052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/pisadas_2/terreno
+  m_EditorClassIdentifier: 
+  Name: terreno
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 4
+  ID:
+    data1: 2902753736
+    data2: 1775688607
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-5640338271204167561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,7 +114,7 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638060297545597552
+  lastModified: 638061179782240017
   FileSizes:
   - Name: Desktop
     Value: 2198144
@@ -140,10 +188,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Sounds.bank
   Name: Sounds
   StudioPath: bank:/Sounds
-  lastModified: 638060297601792310
+  lastModified: 638061179810346855
   FileSizes:
   - Name: Desktop
-    Value: 8499840
+    Value: 8941568
   Exists: 1
 --- !u!114 &-1914131130492721400
 MonoBehaviour:
@@ -220,6 +268,62 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 29000
+--- !u!114 &-1700126839148734312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/pisadas_2
+  m_EditorClassIdentifier: 
+  Path: event:/pisadas_2
+  Guid:
+    Data1: 931598225
+    Data2: 1284270789
+    Data3: -1782437732
+    Data4: -476541001
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -6597598689672572052}
+  - {fileID: 9021544299348323415}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1045664431559757933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/pajaros
+  m_EditorClassIdentifier: 
+  Path: event:/pajaros
+  Guid:
+    Data1: -494942096
+    Data2: 1114299965
+    Data3: 109403027
+    Data4: 921889678
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 100
 --- !u!114 &-478328782465859006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,13 +383,17 @@ MonoBehaviour:
   - {fileID: 2623740213282003601}
   - {fileID: 2555576168581753672}
   - {fileID: 5110253580663868440}
+  - {fileID: -1045664431559757933}
+  - {fileID: 7263147311995482038}
+  - {fileID: 5360981048649444353}
+  - {fileID: -1700126839148734312}
   EditorParameters:
   - {fileID: 2303356358715460305}
   MasterBanks:
   - {fileID: -4577728602309866515}
   StringsBanks:
   - {fileID: 301143784063883820}
-  cacheTime: 638060297601792310
+  cacheTime: 638061179810346855
   cacheVersion: 131593
 --- !u!114 &301143784063883820
 MonoBehaviour:
@@ -302,10 +410,34 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638060297545747155
+  lastModified: 638061179782399604
   FileSizes:
   - Name: Desktop
-    Value: 1622
+    Value: 1802
+  Exists: 1
+--- !u!114 &590449010481064970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/pisadas/terreno
+  m_EditorClassIdentifier: 
+  Name: terreno
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 4
+  ID:
+    data1: 2902753736
+    data2: 1775688607
+  Type: 1
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &2303356358715460305
 MonoBehaviour:
@@ -522,6 +654,62 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 124464
+--- !u!114 &5360981048649444353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/pisadas
+  m_EditorClassIdentifier: 
+  Path: event:/pisadas
+  Guid:
+    Data1: 1497959934
+    Data2: 1314285638
+    Data3: -1889999696
+    Data4: 1517377473
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 590449010481064970}
+  - {fileID: -7418988344395410494}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7263147311995482038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/insectos
+  m_EditorClassIdentifier: 
+  Path: event:/insectos
+  Guid:
+    Data1: 1845828781
+    Data2: 1210330770
+    Data3: -1855411067
+    Data4: 2093187006
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 100
 --- !u!114 &7570673033868143925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -549,3 +737,27 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 312
+--- !u!114 &9021544299348323415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/pisadas_2/CaminarCorrer
+  m_EditorClassIdentifier: 
+  Name: CaminarCorrer
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 1016807526
+    data2: 4268168178
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1

@@ -137,6 +137,11 @@ public class FirstPersonController : MonoBehaviour
     private Vector3 jointOriginalPos;
     private float timer = 0;
 
+    // Variables para los pasos
+    private float stepTime = 1;
+    const float walk_Time = 0.65f;
+    const float run_Time = 0.3f;
+
     #endregion
 
 
@@ -392,16 +397,21 @@ public class FirstPersonController : MonoBehaviour
             HeadBob();
         }
 
-        if (isWalking)
+        //SONIDO MOVERSE
+        if (isWalking || isSprinting)
         {
-            //SONIDO MOVERSE
-            if (!emisor_pasos.IsPlaying())
+            if ((!emisor_pasos.IsPlaying() || stepTime <= 0) && isGrounded)
             {
                 check_footstep();
             }
+
+            stepTime -= Time.deltaTime; 
+            
         }
         else
-            emisor_pasos.Stop();
+        {
+            stepTime = walk_Time;
+        }
     }
 
     void FixedUpdate()
@@ -596,16 +606,20 @@ public class FirstPersonController : MonoBehaviour
     private void check_footstep()
     {
         emisor_pasos.Play();
-
         tipo_pisada material_terreno = footstep_swapper.CheckLayers();
         Debug.Log(material_terreno);
         emisor_pasos.EventInstance.setParameterByName("terreno", (int)material_terreno);
-        //emisor_pasos.EventInstance.setParameterByName("CaminarCorrer", 0);
 
         if(isSprinting)
+        {
             emisor_pasos.EventInstance.setParameterByName("CaminarCorrer", 1);
+            stepTime = run_Time;
+        }
         else
+        {
+            stepTime = walk_Time;
             emisor_pasos.EventInstance.setParameterByName("CaminarCorrer", 0);
+        }
 
     }
 }
