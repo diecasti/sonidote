@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{afd3af76-0174-4120-b279-78d5773db9dd}">
 		<property name="name">
-			<value>OnOff_Catcher</value>
+			<value>Descartado OnOff_Catcher</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>

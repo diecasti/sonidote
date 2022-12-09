@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{63caa6a8-020d-4fcf-bf2e-6a871756c29d}">
 		<property name="name">
-			<value>Abrir_Catcher</value>
+			<value>descartado Abrir_Catcher</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
