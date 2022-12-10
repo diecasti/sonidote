@@ -1,0 +1,88 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Rio_Manager : MonoBehaviour
+{
+    // Posibles posiciones del emisor
+    [SerializeField]
+    Transform[] posiciones;
+
+    // Emisor
+    [SerializeField]
+    GameObject rio;
+    FMODUnity.StudioEventEmitter rio_emisor;
+
+    // Jugador
+    [SerializeField]
+    Transform jugador;
+    Vector3 ultima_pos_jugador;
+    Vector3 pos_mas_cercana;
+    float t = 0f;
+    float duration = 3f;
+
+    [SerializeField]
+    float velocidad = 1f;
+
+    void Start()
+    {
+        rio_emisor = rio.GetComponent<FMODUnity.StudioEventEmitter>();
+        ultima_pos_jugador = jugador.position;
+    }
+
+    void Update()
+    {
+        // Solo hacemos calculos si el jugador se ha movido
+        Vector3 actual_pos_jugador = jugador.position;
+        if(actual_pos_jugador != ultima_pos_jugador)
+        {
+            // Actualizamos la ultima posicion
+            ultima_pos_jugador = actual_pos_jugador;
+
+            // Elegimos el punto mas cercano al que mover el emisor
+            pos_mas_cercana = Vector3.zero;
+            float distancia = float.MaxValue;
+            for(int i = 0; i <  posiciones.Length; i++)
+            {
+                // Calculamos cual es la distancia mas cercana 
+                float nueva_distancia = Vector3.Distance(posiciones[i].position, actual_pos_jugador);
+                if (nueva_distancia < distancia)
+                {
+                    pos_mas_cercana = posiciones[i].position;
+                    distancia = nueva_distancia;
+                }
+            }            
+        }
+
+        // Si no hemos llegado a la siguiente posicion, movemos el emisor
+        Vector3 dir = (pos_mas_cercana - rio.transform.position);
+        if (dir.magnitude > 0.5)
+        {
+            rio.transform.Translate(dir.normalized * Time.deltaTime * velocidad);
+        }
+
+        // Calculamos la espacialidad del emisor
+        float distancia_con_jugador = Vector3.Distance(actual_pos_jugador, rio.transform.position);
+        if (distancia_con_jugador < 30)
+        {
+            rio_emisor.EventInstance.setParameterByName("rio_espacio", 1 - (distancia_con_jugador / 10));
+            Debug.Log("Dentro: " + (1 - (distancia_con_jugador / 10)));
+        }
+        else
+        {
+            rio_emisor.EventInstance.setParameterByName("rio_espacio", 1);
+            Debug.Log("Fuera");
+        }
+
+        
+
+
+        /*if (t < 1)
+        { // while t below the end limit...
+          // increment it at the desired rate every update:
+            t += Time.deltaTime / duration;
+        }*/
+
+
+    }
+}
