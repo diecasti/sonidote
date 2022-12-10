@@ -35,6 +35,9 @@
 		<relationship name="parameters">
 			<destination>{0e92fca9-6e29-487b-87fa-278571090de5}</destination>
 		</relationship>
+		<relationship name="banks">
+			<destination>{571ad3ff-1fd9-49a5-baef-abe0af670994}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixer" id="{fcc78c48-3bc1-4e32-89d3-060b3bd47cfc}">
 		<relationship name="masterBus">
@@ -307,6 +310,9 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{c6b10a13-90d6-41ee-8f6c-afb52760a305}">
+		<property name="volume">
+			<value>-14</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{1882b77b-4aaa-443c-9226-f6042aca61cd}</destination>
 		</relationship>
@@ -328,6 +334,9 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{f4af6e82-a7f0-4c35-988c-2e327a7d23ab}">
+		<property name="volume">
+			<value>-18</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{2ca1aab8-ee29-4560-abf4-e69d6f6dee3f}</destination>
 		</relationship>
@@ -349,6 +358,9 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{48de6488-a72c-4984-b142-d378231bf94e}">
+		<property name="volume">
+			<value>-16</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{d6df849d-9f28-4c10-aa78-efffcdc3b774}</destination>
 		</relationship>

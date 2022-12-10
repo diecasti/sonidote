@@ -75,6 +75,35 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-6403139680081796858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Thrusthers
+  m_EditorClassIdentifier: 
+  Path: event:/Thrusthers
+  Guid:
+    Data1: 407749414
+    Data2: 1144085355
+    Data3: -2116392784
+    Data4: 304261428
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4764879173147479861}
+  - {fileID: -1376025049344830561}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &-5640338271204167561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,10 +167,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638063089481346998
+  lastModified: 638063108421540466
   FileSizes:
   - Name: Desktop
-    Value: 5333120
+    Value: 2198144
   Exists: 1
 --- !u!114 &-4361211345283493533
 MonoBehaviour:
@@ -213,10 +242,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Sounds.bank
   Name: Sounds
   StudioPath: bank:/Sounds
-  lastModified: 638063089487727482
+  lastModified: 638063108429737512
   FileSizes:
   - Name: Desktop
-    Value: 12167968
+    Value: 31697152
   Exists: 1
 --- !u!114 &-2782432118289581050
 MonoBehaviour:
@@ -237,7 +266,7 @@ MonoBehaviour:
     Data3: 421718689
     Data4: -599971674
   Banks:
-  - {fileID: -4577728602309866515}
+  - {fileID: -2950281596854180055}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -406,6 +435,30 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-1376025049344830561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Thrusthers/impulso
+  m_EditorClassIdentifier: 
+  Name: impulso
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3684177730
+    data2: 1198166991
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-1045664431559757933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -499,13 +552,14 @@ MonoBehaviour:
   - {fileID: -2782432118289581050}
   - {fileID: 1348719784540178230}
   - {fileID: -2708569390805804546}
+  - {fileID: -6403139680081796858}
   EditorParameters:
   - {fileID: -1437077731175522966}
   MasterBanks:
   - {fileID: -4577728602309866515}
   StringsBanks:
   - {fileID: 301143784063883820}
-  cacheTime: 638063089487727482
+  cacheTime: 638063108429737512
   cacheVersion: 131593
 --- !u!114 &301143784063883820
 MonoBehaviour:
@@ -522,10 +576,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638063089481407049
+  lastModified: 638063108421570493
   FileSizes:
   - Name: Desktop
-    Value: 2330
+    Value: 2372
   Exists: 1
 --- !u!114 &590449010481064970
 MonoBehaviour:
@@ -763,6 +817,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 37494
+--- !u!114 &4764879173147479861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Thrusthers/T_On
+  m_EditorClassIdentifier: 
+  Name: T_On
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2989561993
+    data2: 1328644827
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &5110253580663868440
 MonoBehaviour:
   m_ObjectHideFlags: 0

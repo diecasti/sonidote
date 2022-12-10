@@ -96,7 +96,8 @@ public class FirstPersonController : MonoBehaviour
     public float CombustibleMax = 5.0f;
     public float JetPower = 1.0f;
 
-
+    //emisores
+    public FMODUnity.StudioEventEmitter emisor_JetPack;
     #endregion
 
     #region Jump
@@ -147,7 +148,6 @@ public class FirstPersonController : MonoBehaviour
 
     FMODUnity.StudioEventEmitter emisor_pasos;
     FMOD.Studio.EventInstance jetPack;
-    public FMODUnity.StudioEventEmitter emisor_JetPack;
     StepsSwap footstep_swapper;
     float impulso = 0;
 
@@ -567,6 +567,10 @@ public class FirstPersonController : MonoBehaviour
                 Crouch();
             }
         }
+        else if (impulso > 0f)
+        {
+            impulso -= 1 * Time.deltaTime;
+        }
     }
 
     private void Crouch()
@@ -858,6 +862,25 @@ public class FirstPersonController : MonoBehaviour
         GUI.enabled = true;
 
         #endregion
+
+
+        #region Emisores
+
+        EditorGUILayout.BeginHorizontal();
+        EditorGUILayout.PrefixLabel(new GUIContent("Emisor de jetpacks", "autoexplicativo wacho"));
+        fpc.emisor_JetPack = (FMODUnity.StudioEventEmitter)EditorGUILayout.ObjectField(fpc.emisor_JetPack, typeof(FMODUnity.StudioEventEmitter), true);
+        EditorGUILayout.EndHorizontal();
+
+
+
+    // FMODUnity.StudioEventEmitter emisor_JetPack;
+
+
+
+
+
+        #endregion
+
 
         //Sets any changes from the prefab
         if (GUI.changed)
