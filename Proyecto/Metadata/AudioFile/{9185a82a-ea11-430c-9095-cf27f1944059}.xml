@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{9185a82a-ea11-430c-9095-cf27f1944059}">
+		<property name="assetPath">
+			<value>ES_Gas Leak 2 - SFX Producer.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>121.16266666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7e841238-9cb3-422b-a5d8-66bb96a370a5}</destination>
+		</relationship>
+	</object>
+</objects>

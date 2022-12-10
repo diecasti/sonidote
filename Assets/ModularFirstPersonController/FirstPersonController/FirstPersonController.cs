@@ -146,8 +146,10 @@ public class FirstPersonController : MonoBehaviour
 
 
     FMODUnity.StudioEventEmitter emisor_pasos;
+    FMOD.Studio.EventInstance jetPack;
+    public FMODUnity.StudioEventEmitter emisor_JetPack;
     StepsSwap footstep_swapper;
-
+    float impulso = 0;
 
     private void Awake()
     {
@@ -218,6 +220,11 @@ public class FirstPersonController : MonoBehaviour
         }
 
         #endregion
+
+        emisor_JetPack.Play();
+        jetPack = emisor_JetPack.EventInstance;
+
+
     }
 
     float camRotation;
@@ -364,6 +371,13 @@ public class FirstPersonController : MonoBehaviour
             //propulsor
             fly();
         }
+        else if (impulso > 0f)
+        {
+            impulso = 0;
+        }
+
+        jetPack.setParameterByName("impulso", impulso);
+
 
         #endregion
 
@@ -540,6 +554,11 @@ public class FirstPersonController : MonoBehaviour
                 rb.AddForce(0f, JetPower, 0f, ForceMode.Force);
                 isGrounded = false;
                 combustibleSeconds -= 1 * Time.deltaTime;
+                //Darle al impulso tmb una generosa adicion para que lo utilice nuestro emisor de mochila propulsora
+                if (impulso < 1.0f)
+                {
+                    impulso += 1 * Time.deltaTime;
+                }
             }
 
             // When crouched and using toggle system, will uncrouch for a fly

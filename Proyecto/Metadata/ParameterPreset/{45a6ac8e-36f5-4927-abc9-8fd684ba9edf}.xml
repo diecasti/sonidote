@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{45a6ac8e-36f5-4927-abc9-8fd684ba9edf}">
+		<property name="name">
+			<value>T_On</value>
+		</property>
+		<relationship name="folder">
+			<destination>{97686484-6248-43bf-9ba5-ce107c622f1e}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{0c381c5e-837a-46c2-8236-af1e8f4aaf59}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{0c381c5e-837a-46c2-8236-af1e8f4aaf59}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

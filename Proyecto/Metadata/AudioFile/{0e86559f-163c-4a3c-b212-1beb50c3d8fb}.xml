@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{0e86559f-163c-4a3c-b212-1beb50c3d8fb}">
+		<property name="assetPath">
+			<value>ES_Blow Torch On Off 3 - SFX Producer.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>22.794666666666668</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7e841238-9cb3-422b-a5d8-66bb96a370a5}</destination>
+		</relationship>
+	</object>
+</objects>
