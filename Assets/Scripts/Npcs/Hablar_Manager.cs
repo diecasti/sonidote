@@ -63,18 +63,17 @@ public class Hablar_Manager : MonoBehaviour
                     FMODUnity.StudioEventEmitter emisor_voz = hit.transform.gameObject.GetComponent<FMODUnity.StudioEventEmitter>();
 
                     // Dependiendo del tag del astronauta hacemos unas cosas u otras
+                    Guitarra guitarra;
                     int indice_astronauta = 0;
                     switch (tag_name)
                     {
                         // Hoguera bosque
                         case "a1":
-                            Debug.Log("aricon1");
                             indice_astronauta = 0;
                             break;
 
                         // Guitarra
                         case "a2":
-                            Debug.Log("aricon2");
                             indice_astronauta = 1;
                             break;
 
@@ -105,6 +104,13 @@ public class Hablar_Manager : MonoBehaviour
                             hay_conversacion = true;
                             se_puede_tuto = false;
                             tuto_hablar.SetActive(false);
+
+                            // Guiitarra
+                            if (indice_astronauta == 1)
+                            {
+                                guitarra = hit.transform.gameObject.GetComponent<Guitarra>();
+                                guitarra.apagar_guitarra();
+                            }
                         }
                     }
                 }
