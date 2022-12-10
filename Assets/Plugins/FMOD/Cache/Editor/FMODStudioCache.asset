@@ -99,6 +99,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-5388951544060703149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/astronautas/num_conversacion
+  m_EditorClassIdentifier: 
+  Name: num_conversacion
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 1101250978
+    data2: 2753434592
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-4577728602309866515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,7 +138,7 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638062729335963375
+  lastModified: 638062804344301355
   FileSizes:
   - Name: Desktop
     Value: 5333120
@@ -146,33 +170,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1344
---- !u!114 &-4047568499504075508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/New Snapshot
-  m_EditorClassIdentifier: 
-  Path: snapshot:/New Snapshot
-  Guid:
-    Data1: 144152595
-    Data2: 1121536298
-    Data3: 1463062934
-    Data4: -493384426
-  Banks:
-  - {fileID: -4577728602309866515}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
 --- !u!114 &-3076469915640684980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,7 +193,8 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 7906924153859092900}
   MinDistance: 1
   MaxDistance: 20
   Length: 146856
@@ -215,11 +213,71 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Sounds.bank
   Name: Sounds
   StudioPath: bank:/Sounds
-  lastModified: 638062729338247249
+  lastModified: 638062804385139749
   FileSizes:
   - Name: Desktop
-    Value: 10296576
+    Value: 12168000
   Exists: 1
+--- !u!114 &-2782432118289581050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Signals
+  m_EditorClassIdentifier: 
+  Path: event:/Signals
+  Guid:
+    Data1: -1096060374
+    Data2: 1151397322
+    Data3: 421718689
+    Data4: -599971674
+  Banks:
+  - {fileID: -4577728602309866515}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1683435473740648515}
+  - {fileID: 6246557689181631939}
+  - {fileID: 2795239258887873551}
+  - {fileID: 5487571944035447035}
+  - {fileID: 7126407301608541875}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 57094
+--- !u!114 &-2708569390805804546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/astronautas
+  m_EditorClassIdentifier: 
+  Path: event:/astronautas
+  Guid:
+    Data1: 1443970468
+    Data2: 1087837685
+    Data3: -440949628
+    Data4: 872077668
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -5388951544060703149}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-1914131130492721400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,6 +382,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-1437077731175522966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/casco
+  m_EditorClassIdentifier: 
+  Name: casco
+  StudioPath: parameter:/Casco
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2473548194
+    data2: 3227526448
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-1045664431559757933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -397,8 +479,6 @@ MonoBehaviour:
   - {fileID: -4577728602309866515}
   - {fileID: -2950281596854180055}
   EditorEvents:
-  - {fileID: -4047568499504075508}
-  - {fileID: 3972777691201824294}
   - {fileID: 7570673033868143925}
   - {fileID: 3960564280636431096}
   - {fileID: -1828534029942803537}
@@ -415,39 +495,18 @@ MonoBehaviour:
   - {fileID: 5360981048649444353}
   - {fileID: -1700126839148734312}
   - {fileID: -3076469915640684980}
-  - {fileID: 8206283030422796565}
+  - {fileID: 8111943100003940257}
+  - {fileID: -2782432118289581050}
+  - {fileID: 1348719784540178230}
+  - {fileID: -2708569390805804546}
   EditorParameters:
-  - {fileID: 2303356358715460305}
+  - {fileID: -1437077731175522966}
   MasterBanks:
   - {fileID: -4577728602309866515}
   StringsBanks:
   - {fileID: 301143784063883820}
-  cacheTime: 638062729338247249
+  cacheTime: 638062804385139749
   cacheVersion: 131593
---- !u!114 &208878939201825913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Signals/s1
-  m_EditorClassIdentifier: 
-  Name: s1
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 128199770
-    data2: 1746356684
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &301143784063883820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,10 +522,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638062729335005919
+  lastModified: 638062804344440977
   FileSizes:
   - Name: Desktop
-    Value: 2110
+    Value: 2246
   Exists: 1
 --- !u!114 &590449010481064970
 MonoBehaviour:
@@ -492,7 +551,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &2303356358715460305
+--- !u!114 &1348719784540178230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Normal
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Normal
+  Guid:
+    Data1: -1284462711
+    Data2: 1287777972
+    Data3: -51731541
+    Data4: -1434964360
+  Banks:
+  - {fileID: -4577728602309866515}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &1683435473740648515
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -502,18 +588,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/casco
+  m_Name: parameter:/Signals/s3
   m_EditorClassIdentifier: 
-  Name: casco
-  StudioPath: parameter:/Casco
+  Name: s3
+  StudioPath: 
   Min: 0
   Max: 1
   Default: 0
   ID:
-    data1: 2473548194
-    data2: 3227526448
+    data1: 1390975426
+    data2: 1147173061
   Type: 0
-  IsGlobal: 1
+  IsGlobal: 0
   Labels: []
   Exists: 1
 --- !u!114 &2514003887006931867
@@ -626,7 +712,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 28656
---- !u!114 &3907421945013859930
+--- !u!114 &2795239258887873551
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -636,16 +722,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Signals/CatcherOn
+  m_Name: parameter:/Signals/s1
   m_EditorClassIdentifier: 
-  Name: CatcherOn
+  Name: s1
   StudioPath: 
-  Min: -0.1
+  Min: 0
   Max: 1
-  Default: -0.1
+  Default: 0
   ID:
-    data1: 3596891005
-    data2: 3696789623
+    data1: 128199770
+    data2: 1746356684
   Type: 0
   IsGlobal: 0
   Labels: []
@@ -677,33 +763,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 37494
---- !u!114 &3972777691201824294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/Normal
-  m_EditorClassIdentifier: 
-  Path: snapshot:/Normal
-  Guid:
-    Data1: -1284462711
-    Data2: 1287777972
-    Data3: -51731541
-    Data4: -1434964360
-  Banks:
-  - {fileID: -4577728602309866515}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
 --- !u!114 &5110253580663868440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,30 +790,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 124464
---- !u!114 &5113780724582810162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Signals/s4
-  m_EditorClassIdentifier: 
-  Name: s4
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3308420302
-    data2: 1370672571
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &5360981048649444353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -784,7 +819,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &6828530224607003979
+--- !u!114 &5487571944035447035
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -794,21 +829,45 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Signals/s3
+  m_Name: parameter:/Signals/CatcherOn
   m_EditorClassIdentifier: 
-  Name: s3
+  Name: CatcherOn
+  StudioPath: 
+  Min: -0.1
+  Max: 1
+  Default: -0.1
+  ID:
+    data1: 3596891005
+    data2: 3696789623
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &6246557689181631939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Signals/s4
+  m_EditorClassIdentifier: 
+  Name: s4
   StudioPath: 
   Min: 0
   Max: 1
   Default: 0
   ID:
-    data1: 1390975426
-    data2: 1147173061
+    data1: 3308420302
+    data2: 1370672571
   Type: 0
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &6875718643371598879
+--- !u!114 &7126407301608541875
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -886,7 +945,31 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 312
---- !u!114 &8206283030422796565
+--- !u!114 &7906924153859092900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/rio/rio_2D
+  m_EditorClassIdentifier: 
+  Name: rio_2D
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1407804319
+    data2: 867043849
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &8111943100003940257
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -896,28 +979,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Signals
+  m_Name: snapshot:/New Snapshot
   m_EditorClassIdentifier: 
-  Path: event:/Signals
+  Path: snapshot:/New Snapshot
   Guid:
-    Data1: -1096060374
-    Data2: 1151397322
-    Data3: 421718689
-    Data4: -599971674
+    Data1: 144152595
+    Data2: 1121536298
+    Data3: 1463062934
+    Data4: -493384426
   Banks:
   - {fileID: -4577728602309866515}
-  IsStream: 1
+  IsStream: 0
   Is3D: 0
   IsOneShot: 0
-  Parameters:
-  - {fileID: 6828530224607003979}
-  - {fileID: 208878939201825913}
-  - {fileID: 3907421945013859930}
-  - {fileID: 6875718643371598879}
-  - {fileID: 5113780724582810162}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 57094
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &9021544299348323415
 MonoBehaviour:
   m_ObjectHideFlags: 0
