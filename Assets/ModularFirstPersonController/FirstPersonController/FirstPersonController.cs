@@ -135,18 +135,17 @@ public class FirstPersonController : MonoBehaviour
 
     // Internal Variables
     private Vector3 jointOriginalPos;
-    private float timer = 0;
-
-    // Variables para los pasos
-    private float stepTime = 1;
-    const float walk_Time = 0.65f;
-    const float run_Time = 0.3f;
 
     #endregion
 
-
+    // Variables para los pasos
     FMODUnity.StudioEventEmitter emisor_pasos;
     StepsSwap footstep_swapper;
+    
+    private float timer = 0;
+    private float stepTime = 1;
+    const float walk_Time = 0.65f;
+    const float run_Time = 0.3f;
 
 
     private void Awake()
