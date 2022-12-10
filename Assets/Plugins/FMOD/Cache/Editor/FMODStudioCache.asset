@@ -114,10 +114,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638061210702214098
+  lastModified: 638062414847146539
   FileSizes:
   - Name: Desktop
-    Value: 2198144
+    Value: 5333120
   Exists: 1
 --- !u!114 &-4361211345283493533
 MonoBehaviour:
@@ -215,10 +215,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Sounds.bank
   Name: Sounds
   StudioPath: bank:/Sounds
-  lastModified: 638061377970736387
+  lastModified: 638062414852986577
   FileSizes:
   - Name: Desktop
-    Value: 10296256
+    Value: 10296576
   Exists: 1
 --- !u!114 &-1914131130492721400
 MonoBehaviour:
@@ -415,14 +415,39 @@ MonoBehaviour:
   - {fileID: 5360981048649444353}
   - {fileID: -1700126839148734312}
   - {fileID: -3076469915640684980}
+  - {fileID: 8206283030422796565}
   EditorParameters:
   - {fileID: 2303356358715460305}
   MasterBanks:
   - {fileID: -4577728602309866515}
   StringsBanks:
   - {fileID: 301143784063883820}
-  cacheTime: 638061377970736387
+  cacheTime: 638062414852986577
   cacheVersion: 131593
+--- !u!114 &208878939201825913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Signals/s1
+  m_EditorClassIdentifier: 
+  Name: s1
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 128199770
+    data2: 1746356684
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &301143784063883820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,10 +463,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638061377969910666
+  lastModified: 638062414847176577
   FileSizes:
   - Name: Desktop
-    Value: 1848
+    Value: 2110
   Exists: 1
 --- !u!114 &590449010481064970
 MonoBehaviour:
@@ -601,6 +626,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 28656
+--- !u!114 &3907421945013859930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Signals/CatcherOn
+  m_EditorClassIdentifier: 
+  Name: CatcherOn
+  StudioPath: 
+  Min: -0.1
+  Max: 1
+  Default: -0.1
+  ID:
+    data1: 3596891005
+    data2: 3696789623
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &3960564280636431096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -682,6 +731,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 124464
+--- !u!114 &5113780724582810162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Signals/s4
+  m_EditorClassIdentifier: 
+  Name: s4
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3308420302
+    data2: 1370672571
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &5360981048649444353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -711,6 +784,54 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6828530224607003979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Signals/s3
+  m_EditorClassIdentifier: 
+  Name: s3
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1390975426
+    data2: 1147173061
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &6875718643371598879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Signals/s2
+  m_EditorClassIdentifier: 
+  Name: s2
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2106922779
+    data2: 2707013145
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &7263147311995482038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,6 +886,38 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 312
+--- !u!114 &8206283030422796565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Signals
+  m_EditorClassIdentifier: 
+  Path: event:/Signals
+  Guid:
+    Data1: -1096060374
+    Data2: 1151397322
+    Data3: 421718689
+    Data4: -599971674
+  Banks:
+  - {fileID: -4577728602309866515}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6828530224607003979}
+  - {fileID: 208878939201825913}
+  - {fileID: 3907421945013859930}
+  - {fileID: 6875718643371598879}
+  - {fileID: 5113780724582810162}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 57094
 --- !u!114 &9021544299348323415
 MonoBehaviour:
   m_ObjectHideFlags: 0
