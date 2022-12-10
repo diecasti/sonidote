@@ -75,7 +75,7 @@ public class SignalCatcher : MonoBehaviour
 
 
         //dentro de la camara?
-        if (viewPos)
+        if (true)
         { 
             //centro de la camara
             float dist = Vector2.Distance(new Vector2(0.5f, 0.5f), new Vector2(viewPos.x, viewPos.y));

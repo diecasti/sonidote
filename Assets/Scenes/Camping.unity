@@ -2639,6 +2639,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4a03f2945fdfd6428e0d871f6f993d9, type: 3}
+--- !u!1 &160484082 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 666602370706033372, guid: 0c2745f3269c27e44807e3837a514058, type: 3}
+  m_PrefabInstance: {fileID: 28407680}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &161171191 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8790303995647450029, guid: 4b70a5cebd86b804db0c14a942ed8c32, type: 3}
@@ -27404,6 +27409,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 858208585074328177, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3393398843903954999, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -27464,6 +27477,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: FirstPersonController
       objectReference: {fileID: 0}
+    - target: {fileID: 7205738076556159036, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: objectives.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7205738076556159036, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: objectives.Array.data[0]
+      value: 
+      objectReference: {fileID: 160484082}
+    - target: {fileID: 7205738076556159036, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: objectives.Array.data[1]
+      value: 
+      objectReference: {fileID: 1869921904}
+    - target: {fileID: 7205738076556159036, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: objectives.Array.data[2]
+      value: 
+      objectReference: {fileID: 395999947}
+    - target: {fileID: 7205738076556159036, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: objectives.Array.data[3]
+      value: 
+      objectReference: {fileID: 1660075509}
+    - target: {fileID: 7948686700158723482, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: objectives.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7948686700158723482, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: objectives.Array.data[0]
+      value: 
+      objectReference: {fileID: 160484082}
+    - target: {fileID: 7948686700158723482, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: objectives.Array.data[1]
+      value: 
+      objectReference: {fileID: 1869921904}
+    - target: {fileID: 7948686700158723482, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: objectives.Array.data[2]
+      value: 
+      objectReference: {fileID: 395999947}
+    - target: {fileID: 7948686700158723482, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: objectives.Array.data[3]
+      value: 
+      objectReference: {fileID: 1660075509}
     - target: {fileID: 8533621542270763904, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_StopNaN
       value: 1
