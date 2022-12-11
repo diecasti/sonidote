@@ -29788,7 +29788,7 @@ PrefabInstance:
       objectReference: {fileID: 1060569384}
     - target: {fileID: 7205738076556159036, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: center
-      value: 0.05
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7205738076556159036, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: maxRad
