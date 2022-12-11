@@ -119,8 +119,8 @@ MonoBehaviour:
   Name: distancia_bosque
   StudioPath: 
   Min: 0
-  Max: 70
-  Default: 49
+  Max: 1
+  Default: 0
   ID:
     data1: 246019122
     data2: 3365114332
@@ -167,7 +167,7 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638063159870229326
+  lastModified: 638063186603735469
   FileSizes:
   - Name: Desktop
     Value: 2198144
@@ -242,7 +242,7 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Sounds.bank
   Name: Sounds
   StudioPath: bank:/Sounds
-  lastModified: 638063159880047763
+  lastModified: 638063186611712297
   FileSizes:
   - Name: Desktop
     Value: 31700288
@@ -560,7 +560,7 @@ MonoBehaviour:
   - {fileID: -4577728602309866515}
   StringsBanks:
   - {fileID: 301143784063883820}
-  cacheTime: 638063159880047763
+  cacheTime: 638063186611712297
   cacheVersion: 131593
 --- !u!114 &301143784063883820
 MonoBehaviour:
@@ -577,7 +577,7 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638063159870259351
+  lastModified: 638063186603765493
   FileSizes:
   - Name: Desktop
     Value: 2416

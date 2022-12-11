@@ -77,14 +77,14 @@ public class Rio_Manager : MonoBehaviour
             {
                 float a = 1.0f + ((center - distancia_con_jugador) / center);
                 rio_emisor.EventInstance.setParameterByName("rio_espacio", a);
-                Debug.Log("Dentro: " + a);
+                //Debug.Log("Dentro: " + a);
 
                 //return a;
             }
             else
             {
                 rio_emisor.EventInstance.setParameterByName("rio_espacio", 1);
-                Debug.Log("Dentro");
+                //Debug.Log("Dentro");
 
                 //return 1;
             }
@@ -92,31 +92,8 @@ public class Rio_Manager : MonoBehaviour
         else
         {
             rio_emisor.EventInstance.setParameterByName("rio_espacio", 0);
-            Debug.Log("Fuera");
+            //Debug.Log("Fuera");
 
         }
-
-
-        if (distancia_con_jugador < 30)
-        {
-            rio_emisor.EventInstance.setParameterByName("rio_espacio", 1 - (distancia_con_jugador / 10));
-            Debug.Log("Dentro: " + (1 - (distancia_con_jugador / 10)));
-        }
-        else
-        {
-            rio_emisor.EventInstance.setParameterByName("rio_espacio", 1);
-            Debug.Log("Fuera");
-        }
-
-        
-
-
-        /*if (t < 1)
-        { // while t below the end limit...
-          // increment it at the desired rate every update:
-            t += Time.deltaTime / duration;
-        }*/
-
-
     }
 }
