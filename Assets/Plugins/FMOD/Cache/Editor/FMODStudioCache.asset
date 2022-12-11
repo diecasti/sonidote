@@ -215,7 +215,7 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638063771475479659
+  lastModified: 638063901010416971
   FileSizes:
   - Name: Desktop
     Value: 2199392
@@ -314,7 +314,7 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Sounds.bank
   Name: Sounds
   StudioPath: bank:/Sounds
-  lastModified: 638063771484087079
+  lastModified: 638063901023072676
   FileSizes:
   - Name: Desktop
     Value: 39956608
@@ -635,7 +635,7 @@ MonoBehaviour:
   - {fileID: -4577728602309866515}
   StringsBanks:
   - {fileID: 301143784063883820}
-  cacheTime: 638063771484087079
+  cacheTime: 638063901023072676
   cacheVersion: 131593
 --- !u!114 &301143784063883820
 MonoBehaviour:
@@ -652,7 +652,7 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638063771475509694
+  lastModified: 638063901010451993
   FileSizes:
   - Name: Desktop
     Value: 2636
