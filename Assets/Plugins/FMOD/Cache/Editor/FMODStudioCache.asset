@@ -1,6 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8416721514495375490
+--- !u!114 &-9105297770618370589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/personaje/Pasos
+  m_EditorClassIdentifier: 
+  Path: event:/personaje/Pasos
+  Guid:
+    Data1: -1396700929
+    Data2: 1266124462
+    Data3: -364572268
+    Data4: 660878498
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2200579528902106975}
+  - {fileID: -611899871725997099}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8573468466706473672
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24,7 +53,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-7418988344395410494
+--- !u!114 &-8368268657326901469
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -34,17 +63,92 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/pisadas/CaminarCorrer
+  m_Name: parameter:/Signals/s2
   m_EditorClassIdentifier: 
-  Name: CaminarCorrer
+  Name: s2
   StudioPath: 
   Min: 0
   Max: 1
-  Default: 1
+  Default: 0
   ID:
-    data1: 1016807526
-    data2: 4268168178
-  Type: 1
+    data1: 2106922779
+    data2: 2707013145
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-7927214797954985849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Signals/s3
+  m_EditorClassIdentifier: 
+  Name: s3
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1390975426
+    data2: 1147173061
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-7503659124788429356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiente/Agua/cascada
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiente/Agua/cascada
+  Guid:
+    Data1: 1324912160
+    Data2: 1300501869
+    Data3: 1709675430
+    Data4: -1076047899
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 120160
+--- !u!114 &-7477224825254458357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Thrusthers/impulso
+  m_EditorClassIdentifier: 
+  Name: impulso
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3684177730
+    data2: 1198166991
+  Type: 0
   IsGlobal: 0
   Labels: []
   Exists: 1
@@ -72,7 +176,79 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &-6846074441032458582
+--- !u!114 &-6652163168658095706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Thrusthers/T_On
+  m_EditorClassIdentifier: 
+  Name: T_On
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2989561993
+    data2: 1328644827
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-6487211744862225344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/rio/rio_2D
+  m_EditorClassIdentifier: 
+  Name: rio_2D
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1407804319
+    data2: 867043849
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-6083425009668666512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Pisadas_2/CaminarCorrer
+  m_EditorClassIdentifier: 
+  Name: CaminarCorrer
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 1016807526
+    data2: 4268168178
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-5114344429643786279
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -82,14 +258,99 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/linterna
+  m_Name: event:/personaje/respirar
   m_EditorClassIdentifier: 
-  Path: event:/linterna
+  Path: event:/personaje/respirar
   Guid:
-    Data1: -1576489330
-    Data2: 1323722482
-    Data3: -704080964
-    Data4: -350925058
+    Data1: -2138433827
+    Data2: 1173598897
+    Data3: 58193564
+    Data4: 516883669
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 18672
+--- !u!114 &-4890371118235180111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiente/Bosque/ambiente_bosque
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiente/Bosque/ambiente_bosque
+  Guid:
+    Data1: 1513649053
+    Data2: 1334545658
+    Data3: -417266291
+    Data4: 909843095
+  Banks:
+  - {fileID: -4577728602309866515}
+  - {fileID: -2950281596854180055}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2893379125466482814}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 180024
+--- !u!114 &-4801898012664172205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/personaje/Pisadas_2
+  m_EditorClassIdentifier: 
+  Path: event:/personaje/Pisadas_2
+  Guid:
+    Data1: 931598225
+    Data2: 1284270789
+    Data3: -1782437732
+    Data4: -476541001
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -3433554676816417703}
+  - {fileID: -6083425009668666512}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4673249302798819193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/personaje/Aparejos/cerrar_casco
+  m_EditorClassIdentifier: 
+  Path: event:/personaje/Aparejos/cerrar_casco
+  Guid:
+    Data1: -1178836214
+    Data2: 1198818763
+    Data3: -881033324
+    Data4: 1233602078
   Banks:
   - {fileID: -2950281596854180055}
   IsStream: 0
@@ -98,108 +359,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 85
---- !u!114 &-6597598689672572052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/pisadas_2/terreno
-  m_EditorClassIdentifier: 
-  Name: terreno
-  StudioPath: 
-  Min: 0
-  Max: 4
-  Default: 4
-  ID:
-    data1: 2902753736
-    data2: 1775688607
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-6403139680081796858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Thrusthers
-  m_EditorClassIdentifier: 
-  Path: event:/Thrusthers
-  Guid:
-    Data1: 407749414
-    Data2: 1144085355
-    Data3: -2116392784
-    Data4: 304261428
-  Banks:
-  - {fileID: -2950281596854180055}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 4764879173147479861}
-  - {fileID: -1376025049344830561}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8000
---- !u!114 &-5640338271204167561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ambiente_bosque/distancia_bosque
-  m_EditorClassIdentifier: 
-  Name: distancia_bosque
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 246019122
-    data2: 3365114332
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-5388951544060703149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/astronautas/num_conversacion
-  m_EditorClassIdentifier: 
-  Name: num_conversacion
-  StudioPath: 
-  Min: 0
-  Max: 4
-  Default: 0
-  ID:
-    data1: 1101250978
-    data2: 2753434592
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
+  Length: 312
 --- !u!114 &-4577728602309866515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,39 +375,12 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638063901010416971
+  lastModified: 638063981262384764
   FileSizes:
   - Name: Desktop
     Value: 2199392
   Exists: 1
---- !u!114 &-4361211345283493533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/abrir_casco
-  m_EditorClassIdentifier: 
-  Path: event:/abrir_casco
-  Guid:
-    Data1: -795075202
-    Data2: 1255748428
-    Data3: 470199463
-    Data4: -1431071957
-  Banks:
-  - {fileID: -2950281596854180055}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1344
---- !u!114 &-3412521356909268795
+--- !u!114 &-3433554676816417703
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -257,48 +390,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Signals/s5
+  m_Name: parameter:/Pisadas_2/terreno
   m_EditorClassIdentifier: 
-  Name: s5
+  Name: terreno
   StudioPath: 
   Min: 0
-  Max: 1
-  Default: 0
+  Max: 4
+  Default: 4
   ID:
-    data1: 3575704551
-    data2: 3185793095
-  Type: 0
+    data1: 2902753736
+    data2: 1775688607
+  Type: 1
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-3076469915640684980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/rio
-  m_EditorClassIdentifier: 
-  Path: event:/rio
-  Guid:
-    Data1: -1925450158
-    Data2: 1121463671
-    Data3: 2137772934
-    Data4: -841123899
-  Banks:
-  - {fileID: -2950281596854180055}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 7906924153859092900}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 146856
 --- !u!114 &-2950281596854180055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,12 +419,12 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Sounds.bank
   Name: Sounds
   StudioPath: bank:/Sounds
-  lastModified: 638063901023072676
+  lastModified: 638063981272018055
   FileSizes:
   - Name: Desktop
-    Value: 39956608
+    Value: 43109248
   Exists: 1
---- !u!114 &-2782432118289581050
+--- !u!114 &-2885577641651782460
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -329,59 +434,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Signals
+  m_Name: event:/Ambiente/personajes/fire
   m_EditorClassIdentifier: 
-  Path: event:/Signals
+  Path: event:/Ambiente/personajes/fire
   Guid:
-    Data1: -1096060374
-    Data2: 1151397322
-    Data3: 421718689
-    Data4: -599971674
+    Data1: -1441504259
+    Data2: 1144262209
+    Data3: -752229751
+    Data4: 1983115732
   Banks:
   - {fileID: -2950281596854180055}
   IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 1683435473740648515}
-  - {fileID: 6246557689181631939}
-  - {fileID: 2795239258887873551}
-  - {fileID: 5487571944035447035}
-  - {fileID: 7126407301608541875}
-  - {fileID: -3412521356909268795}
-  - {fileID: -8416721514495375490}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 159432
---- !u!114 &-2708569390805804546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/astronautas
-  m_EditorClassIdentifier: 
-  Path: event:/astronautas
-  Guid:
-    Data1: 1443970468
-    Data2: 1087837685
-    Data3: -440949628
-    Data4: 872077668
-  Banks:
-  - {fileID: -2950281596854180055}
-  IsStream: 0
   Is3D: 1
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -5388951544060703149}
+  IsOneShot: 0
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
---- !u!114 &-1914131130492721400
+  Length: 28656
+--- !u!114 &-2200579528902106975
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -391,31 +461,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/pasos/CaminarCorrer
-  m_EditorClassIdentifier: 
-  Name: CaminarCorrer
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 1016807526
-    data2: 4268168178
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-1866526318189023048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/pasos/terreno
+  m_Name: parameter:/Pasos/terreno
   m_EditorClassIdentifier: 
   Name: terreno
   StudioPath: 
@@ -429,62 +475,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-1828534029942803537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Guitarra
-  m_EditorClassIdentifier: 
-  Path: event:/Guitarra
-  Guid:
-    Data1: -507625455
-    Data2: 1141514687
-    Data3: 573988751
-    Data4: -472610303
-  Banks:
-  - {fileID: -2950281596854180055}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 29000
---- !u!114 &-1700126839148734312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/pisadas_2
-  m_EditorClassIdentifier: 
-  Path: event:/pisadas_2
-  Guid:
-    Data1: 931598225
-    Data2: 1284270789
-    Data3: -1782437732
-    Data4: -476541001
-  Banks:
-  - {fileID: -2950281596854180055}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -6597598689672572052}
-  - {fileID: 9021544299348323415}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-1437077731175522966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -509,7 +499,35 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &-1376025049344830561
+--- !u!114 &-1353301835738948547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiente/personajes/astronautas
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiente/personajes/astronautas
+  Guid:
+    Data1: 1443970468
+    Data2: 1087837685
+    Data3: -440949628
+    Data4: 872077668
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 8118958972608337634}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1204960327920009036
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -519,21 +537,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Thrusthers/impulso
+  m_Name: parameter:/Signals/s4
   m_EditorClassIdentifier: 
-  Name: impulso
+  Name: s4
   StudioPath: 
   Min: 0
   Max: 1
   Default: 0
   ID:
-    data1: 3684177730
-    data2: 1198166991
+    data1: 3308420302
+    data2: 1370672571
   Type: 0
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-1045664431559757933
+--- !u!114 &-1017873244980940963
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -543,24 +561,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/pajaros
+  m_Name: event:/personaje/Aparejos/linterna
   m_EditorClassIdentifier: 
-  Path: event:/pajaros
+  Path: event:/personaje/Aparejos/linterna
   Guid:
-    Data1: -494942096
-    Data2: 1114299965
-    Data3: 109403027
-    Data4: 921889678
+    Data1: -1576489330
+    Data2: 1323722482
+    Data3: -704080964
+    Data4: -350925058
   Banks:
   - {fileID: -2950281596854180055}
   IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
+  Is3D: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 100
---- !u!114 &-478328782465859006
+  Length: 85
+--- !u!114 &-983063954913062197
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -570,25 +588,47 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/ambiente_bosque
+  m_Name: event:/personaje/Aparejos/abrir_casco
   m_EditorClassIdentifier: 
-  Path: event:/ambiente_bosque
+  Path: event:/personaje/Aparejos/abrir_casco
   Guid:
-    Data1: 1513649053
-    Data2: 1334545658
-    Data3: -417266291
-    Data4: 909843095
+    Data1: -795075202
+    Data2: 1255748428
+    Data3: 470199463
+    Data4: -1431071957
   Banks:
-  - {fileID: -4577728602309866515}
   - {fileID: -2950281596854180055}
-  IsStream: 1
+  IsStream: 0
   Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -5640338271204167561}
+  IsOneShot: 1
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 180024
+  Length: 1344
+--- !u!114 &-611899871725997099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Pasos/CaminarCorrer
+  m_EditorClassIdentifier: 
+  Name: CaminarCorrer
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 1016807526
+    data2: 4268168178
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -606,28 +646,28 @@ MonoBehaviour:
   - {fileID: -4577728602309866515}
   - {fileID: -2950281596854180055}
   EditorEvents:
-  - {fileID: 7570673033868143925}
-  - {fileID: 3960564280636431096}
-  - {fileID: -1828534029942803537}
-  - {fileID: 2525291703579219851}
-  - {fileID: -478328782465859006}
-  - {fileID: -4361211345283493533}
-  - {fileID: -6846074441032458582}
-  - {fileID: 2514003887006931867}
-  - {fileID: 2623740213282003601}
-  - {fileID: 2555576168581753672}
-  - {fileID: 5110253580663868440}
-  - {fileID: -1045664431559757933}
-  - {fileID: 7263147311995482038}
-  - {fileID: 5360981048649444353}
-  - {fileID: -1700126839148734312}
-  - {fileID: -3076469915640684980}
   - {fileID: 8111943100003940257}
-  - {fileID: -2782432118289581050}
   - {fileID: 1348719784540178230}
-  - {fileID: -2708569390805804546}
-  - {fileID: -6403139680081796858}
-  - {fileID: 1718612371568587464}
+  - {fileID: -4890371118235180111}
+  - {fileID: -4673249302798819193}
+  - {fileID: 5240326624168648075}
+  - {fileID: 6706897632604438898}
+  - {fileID: -7503659124788429356}
+  - {fileID: 7835643609272226136}
+  - {fileID: 3001534208560127967}
+  - {fileID: 7870174334045565039}
+  - {fileID: 6460953830854815337}
+  - {fileID: -983063954913062197}
+  - {fileID: -1017873244980940963}
+  - {fileID: -4801898012664172205}
+  - {fileID: -1353301835738948547}
+  - {fileID: 7581823595366157913}
+  - {fileID: 6047418074677617888}
+  - {fileID: 1297735790186604663}
+  - {fileID: -5114344429643786279}
+  - {fileID: -2885577641651782460}
+  - {fileID: 1250344452478729986}
+  - {fileID: -9105297770618370589}
   EditorParameters:
   - {fileID: -1437077731175522966}
   - {fileID: -7253826616130290808}
@@ -635,8 +675,32 @@ MonoBehaviour:
   - {fileID: -4577728602309866515}
   StringsBanks:
   - {fileID: 301143784063883820}
-  cacheTime: 638063901023072676
+  cacheTime: 638063981272018055
   cacheVersion: 131593
+--- !u!114 &16843137379069077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Signals/s5
+  m_EditorClassIdentifier: 
+  Name: s5
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3575704551
+    data2: 3185793095
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &301143784063883820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -652,12 +716,12 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638063901010451993
+  lastModified: 638063981262419794
   FileSizes:
   - Name: Desktop
-    Value: 2636
+    Value: 2742
   Exists: 1
---- !u!114 &590449010481064970
+--- !u!114 &704462734700098182
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -667,7 +731,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/pisadas/terreno
+  m_Name: parameter:/Pisadas/terreno
   m_EditorClassIdentifier: 
   Name: terreno
   StudioPath: 
@@ -681,6 +745,62 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &1250344452478729986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/personaje/Pisadas
+  m_EditorClassIdentifier: 
+  Path: event:/personaje/Pisadas
+  Guid:
+    Data1: 1497959934
+    Data2: 1314285638
+    Data3: -1889999696
+    Data4: 1517377473
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 704462734700098182}
+  - {fileID: 6779698830166116454}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1297735790186604663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiente/Agua/cascada_splash
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiente/Agua/cascada_splash
+  Guid:
+    Data1: 165045457
+    Data2: 1263196175
+    Data3: 1307259789
+    Data4: 425999762
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 124464
 --- !u!114 &1348719784540178230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,7 +828,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &1683435473740648515
+--- !u!114 &2893379125466482814
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -718,21 +838,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Signals/s3
+  m_Name: parameter:/ambiente_bosque/distancia_bosque
   m_EditorClassIdentifier: 
-  Name: s3
+  Name: distancia_bosque
   StudioPath: 
   Min: 0
   Max: 1
   Default: 0
   ID:
-    data1: 1390975426
-    data2: 1147173061
+    data1: 246019122
+    data2: 3365114332
   Type: 0
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &1718612371568587464
+--- !u!114 &3001534208560127967
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -742,134 +862,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Guitarra 2
+  m_Name: event:/personaje/Aparejos/Signals
   m_EditorClassIdentifier: 
-  Path: event:/Guitarra 2
+  Path: event:/personaje/Aparejos/Signals
   Guid:
-    Data1: 877092802
-    Data2: 1288374637
-    Data3: 1992619685
-    Data4: -1295404343
+    Data1: -1096060374
+    Data2: 1151397322
+    Data3: 421718689
+    Data4: -599971674
   Banks:
   - {fileID: -2950281596854180055}
   IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 170000
---- !u!114 &2514003887006931867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/respirar
-  m_EditorClassIdentifier: 
-  Path: event:/respirar
-  Guid:
-    Data1: -2138433827
-    Data2: 1173598897
-    Data3: 58193564
-    Data4: 516883669
-  Banks:
-  - {fileID: -2950281596854180055}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 18672
---- !u!114 &2525291703579219851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/cascada
-  m_EditorClassIdentifier: 
-  Path: event:/cascada
-  Guid:
-    Data1: 1324912160
-    Data2: 1300501869
-    Data3: 1709675430
-    Data4: -1076047899
-  Banks:
-  - {fileID: -2950281596854180055}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 120160
---- !u!114 &2555576168581753672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/pasos
-  m_EditorClassIdentifier: 
-  Path: event:/pasos
-  Guid:
-    Data1: -1396700929
-    Data2: 1266124462
-    Data3: -364572268
-    Data4: 660878498
-  Banks:
-  - {fileID: -2950281596854180055}
-  IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -1866526318189023048}
-  - {fileID: -1914131130492721400}
+  - {fileID: -7927214797954985849}
+  - {fileID: -1204960327920009036}
+  - {fileID: 5179458202897753442}
+  - {fileID: 5984556155370217012}
+  - {fileID: -8368268657326901469}
+  - {fileID: 16843137379069077}
+  - {fileID: -8573468466706473672}
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
---- !u!114 &2623740213282003601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/fire
-  m_EditorClassIdentifier: 
-  Path: event:/fire
-  Guid:
-    Data1: -1441504259
-    Data2: 1144262209
-    Data3: -752229751
-    Data4: 1983115732
-  Banks:
-  - {fileID: -2950281596854180055}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 28656
---- !u!114 &2795239258887873551
+  Length: 159432
+--- !u!114 &5179458202897753442
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -893,7 +910,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &3960564280636431096
+--- !u!114 &5240326624168648075
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -903,9 +920,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/musica
+  m_Name: event:/Ambiente/musica
   m_EditorClassIdentifier: 
-  Path: event:/musica
+  Path: event:/Ambiente/musica
   Guid:
     Data1: 1850734091
     Data2: 1299745857
@@ -920,87 +937,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 37494
---- !u!114 &4764879173147479861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Thrusthers/T_On
-  m_EditorClassIdentifier: 
-  Name: T_On
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2989561993
-    data2: 1328644827
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &5110253580663868440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/cascada_splash
-  m_EditorClassIdentifier: 
-  Path: event:/cascada_splash
-  Guid:
-    Data1: 165045457
-    Data2: 1263196175
-    Data3: 1307259789
-    Data4: 425999762
-  Banks:
-  - {fileID: -2950281596854180055}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 124464
---- !u!114 &5360981048649444353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/pisadas
-  m_EditorClassIdentifier: 
-  Path: event:/pisadas
-  Guid:
-    Data1: 1497959934
-    Data2: 1314285638
-    Data3: -1889999696
-    Data4: 1517377473
-  Banks:
-  - {fileID: -2950281596854180055}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 590449010481064970}
-  - {fileID: -7418988344395410494}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &5487571944035447035
+--- !u!114 &5984556155370217012
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1024,55 +961,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &6246557689181631939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Signals/s4
-  m_EditorClassIdentifier: 
-  Name: s4
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3308420302
-    data2: 1370672571
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &7126407301608541875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Signals/s2
-  m_EditorClassIdentifier: 
-  Name: s2
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2106922779
-    data2: 2707013145
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &7263147311995482038
+--- !u!114 &6047418074677617888
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1082,9 +971,114 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/insectos
+  m_Name: event:/Ambiente/personajes/Guitarra 2
   m_EditorClassIdentifier: 
-  Path: event:/insectos
+  Path: event:/Ambiente/personajes/Guitarra 2
+  Guid:
+    Data1: 877092802
+    Data2: 1288374637
+    Data3: 1992619685
+    Data4: -1295404343
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 170000
+--- !u!114 &6460953830854815337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiente/Bosque/pajaros
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiente/Bosque/pajaros
+  Guid:
+    Data1: -494942096
+    Data2: 1114299965
+    Data3: 109403027
+    Data4: 921889678
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 100
+--- !u!114 &6706897632604438898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiente/personajes/Guitarra
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiente/personajes/Guitarra
+  Guid:
+    Data1: -507625455
+    Data2: 1141514687
+    Data3: 573988751
+    Data4: -472610303
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 29000
+--- !u!114 &6779698830166116454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Pisadas/CaminarCorrer
+  m_EditorClassIdentifier: 
+  Name: CaminarCorrer
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 1016807526
+    data2: 4268168178
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &7581823595366157913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiente/Bosque/insectos
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiente/Bosque/insectos
   Guid:
     Data1: 1845828781
     Data2: 1210330770
@@ -1099,7 +1093,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 100
---- !u!114 &7570673033868143925
+--- !u!114 &7835643609272226136
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1109,24 +1103,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/cerrar_casco
+  m_Name: event:/personaje/Propulsores/Thrusthers
   m_EditorClassIdentifier: 
-  Path: event:/cerrar_casco
+  Path: event:/personaje/Propulsores/Thrusthers
   Guid:
-    Data1: -1178836214
-    Data2: 1198818763
-    Data3: -881033324
-    Data4: 1233602078
+    Data1: 407749414
+    Data2: 1144085355
+    Data3: -2116392784
+    Data4: 304261428
   Banks:
   - {fileID: -2950281596854180055}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6652163168658095706}
+  - {fileID: -7477224825254458357}
   MinDistance: 1
   MaxDistance: 20
-  Length: 312
---- !u!114 &7906924153859092900
+  Length: 8000
+--- !u!114 &7870174334045565039
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1135,21 +1131,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/rio/rio_2D
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiente/Agua/rio
   m_EditorClassIdentifier: 
-  Name: rio_2D
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1407804319
-    data2: 867043849
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
+  Path: event:/Ambiente/Agua/rio
+  Guid:
+    Data1: -1925450158
+    Data2: 1121463671
+    Data3: 2137772934
+    Data4: -841123899
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6487211744862225344}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 146856
 --- !u!114 &8111943100003940257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1177,7 +1177,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &9021544299348323415
+--- !u!114 &8118958972608337634
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1187,16 +1187,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/pisadas_2/CaminarCorrer
+  m_Name: parameter:/astronautas/num_conversacion
   m_EditorClassIdentifier: 
-  Name: CaminarCorrer
+  Name: num_conversacion
   StudioPath: 
   Min: 0
-  Max: 1
-  Default: 1
+  Max: 4
+  Default: 0
   ID:
-    data1: 1016807526
-    data2: 4268168178
+    data1: 1101250978
+    data2: 2753434592
   Type: 1
   IsGlobal: 0
   Labels: []
