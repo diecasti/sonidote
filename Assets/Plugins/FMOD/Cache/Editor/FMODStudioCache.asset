@@ -167,7 +167,7 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638063108421540466
+  lastModified: 638063159870229326
   FileSizes:
   - Name: Desktop
     Value: 2198144
@@ -242,10 +242,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Sounds.bank
   Name: Sounds
   StudioPath: bank:/Sounds
-  lastModified: 638063108429737512
+  lastModified: 638063159880047763
   FileSizes:
   - Name: Desktop
-    Value: 31697152
+    Value: 31700288
   Exists: 1
 --- !u!114 &-2782432118289581050
 MonoBehaviour:
@@ -553,13 +553,14 @@ MonoBehaviour:
   - {fileID: 1348719784540178230}
   - {fileID: -2708569390805804546}
   - {fileID: -6403139680081796858}
+  - {fileID: 1718612371568587464}
   EditorParameters:
   - {fileID: -1437077731175522966}
   MasterBanks:
   - {fileID: -4577728602309866515}
   StringsBanks:
   - {fileID: 301143784063883820}
-  cacheTime: 638063108429737512
+  cacheTime: 638063159880047763
   cacheVersion: 131593
 --- !u!114 &301143784063883820
 MonoBehaviour:
@@ -576,10 +577,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638063108421570493
+  lastModified: 638063159870259351
   FileSizes:
   - Name: Desktop
-    Value: 2372
+    Value: 2416
   Exists: 1
 --- !u!114 &590449010481064970
 MonoBehaviour:
@@ -656,6 +657,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &1718612371568587464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Guitarra 2
+  m_EditorClassIdentifier: 
+  Path: event:/Guitarra 2
+  Guid:
+    Data1: 877092802
+    Data2: 1288374637
+    Data3: 1992619685
+    Data4: -1295404343
+  Banks:
+  - {fileID: -2950281596854180055}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 170000
 --- !u!114 &2514003887006931867
 MonoBehaviour:
   m_ObjectHideFlags: 0
