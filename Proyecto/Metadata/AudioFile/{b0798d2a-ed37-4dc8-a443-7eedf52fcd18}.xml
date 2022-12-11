@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{b0798d2a-ed37-4dc8-a443-7eedf52fcd18}">
 		<property name="assetPath">
-			<value>ES_CB Radio Static 6 - SFX Producer.mp3</value>
+			<value>Radio/ES_CB Radio Static 6 - SFX Producer.mp3</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

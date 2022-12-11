@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{1b990128-d42d-42f6-8f8b-98e473ddc58f}">
 		<property name="assetPath">
-			<value>ES_Hand Torch Run 2 - SFX Producer.wav</value>
+			<value>Gas/ES_Hand Torch Run 2 - SFX Producer.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

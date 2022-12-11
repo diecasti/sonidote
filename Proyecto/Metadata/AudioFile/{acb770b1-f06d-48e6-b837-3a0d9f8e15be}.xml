@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{acb770b1-f06d-48e6-b837-3a0d9f8e15be}">
 		<property name="assetPath">
-			<value>ES_CB Radio Static 8 - SFX Producer.mp3</value>
+			<value>Radio/ES_CB Radio Static 8 - SFX Producer.mp3</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

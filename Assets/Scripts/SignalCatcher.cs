@@ -45,6 +45,36 @@ public class SignalCatcher : MonoBehaviour
             signals.setParameterByName("s" + (i + 1), intesity[i]);
         }
 
+
+        //si el objeto esat justo enfrente del jugador, tiramos un raycast cortito para que lo pille (ya que las comprobaciones de posicion camara se hacen con el punto de referencia de origen del objeto y ese puede caer fuera cuando nos acercamos demasiado)
+        //tira el ray cast, dios me meo tengo un problema de uretra seguro no paro de ir al baño
+        // Creates a Ray from the center of the viewport
+        Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+        Debug.DrawRay(ray.origin, ray.direction * 10);
+
+        if (Physics.Raycast(ray, 10))
+        {
+            // Hit Something closer than 10 units away
+            RaycastHit[] hits = Physics.RaycastAll(ray, 10);
+            foreach (RaycastHit obj in hits)
+            {
+                int i = 0;
+                foreach (GameObject gmobj in objectives)
+                {
+                    if (gmobj == obj.transform.gameObject)
+                    {
+                        signals.setParameterByName("s" + (i + 1), 1);
+
+                    }
+
+                    i++;
+                }
+
+                //Destroy(obj.transform.gameObject);
+            }
+
+        }
+
     }
 
     public float worldToView(Vector3 posObject)
@@ -55,8 +85,8 @@ public class SignalCatcher : MonoBehaviour
         float x = 0, y = 0;
 
 
-        //dentro de la camara?
-        if (true)
+        //enfrente de la camara?
+        if (viewPos.z > 0)
         { 
             //centro de la camara
             float dist = Vector2.Distance(new Vector2(0.5f, 0.5f), new Vector2(viewPos.x, viewPos.y));

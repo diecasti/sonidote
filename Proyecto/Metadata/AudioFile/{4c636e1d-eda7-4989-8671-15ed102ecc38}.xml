@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{4c636e1d-eda7-4989-8671-15ed102ecc38}">
 		<property name="assetPath">
-			<value>ES_Gas Leak Hose 2 - SFX Producer.wav</value>
+			<value>Gas/ES_Gas Leak Hose 2 - SFX Producer.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{0cb8a4fe-0167-4787-86f2-aa4d516ce0e0}">
 		<property name="assetPath">
-			<value>ES_Blow Torch On Off 2 - SFX Producer.wav</value>
+			<value>Gas/ES_Blow Torch On Off 2 - SFX Producer.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

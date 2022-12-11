@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{58187b47-53cf-44d5-bae9-584ad16d55c3}">
 		<property name="assetPath">
-			<value>ES_Radio Flip Switch 1 - SFX Producer.wav</value>
+			<value>Radio/ES_Radio Flip Switch 1 - SFX Producer.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
