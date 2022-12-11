@@ -1,5 +1,3 @@
--LOW_PASS EN LA CUEVA DE LA CASCADA
-
 -SIGNAL SU VIEJA
 	-Sacar / esconder pistola
 	-Sonidos de las rocas y vainas 
