@@ -40,7 +40,7 @@ public class Casco : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.E))
         {
-            //configuracion_casco();
+            configuracion_casco();
             abierto = !abierto;
             anim.SetBool("cerrado",abierto);
         }
@@ -62,7 +62,7 @@ public class Casco : MonoBehaviour
 
         post_procesado.profile.TryGet<LensDistortion>(out lente_casco);
 
-        lente_casco.active = !abierto;
+        lente_casco.active = abierto;
     }
 
     void sonido_abrir()
