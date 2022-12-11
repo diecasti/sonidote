@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="MixerGroup" id="{6a48b91e-e15e-498e-a892-90f1bce92524}">
 		<property name="name">
-			<value>Lowpass</value>
+			<value>Casco</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{968f409d-8894-4870-b916-97c721f911bd}</destination>
