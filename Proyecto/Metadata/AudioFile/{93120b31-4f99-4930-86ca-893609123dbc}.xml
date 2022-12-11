@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{93120b31-4f99-4930-86ca-893609123dbc}">
 		<property name="assetPath">
-			<value>Camaron - soy gitano.mp3</value>
+			<value>canciones de la radio/Camaron - soy gitano.mp3</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

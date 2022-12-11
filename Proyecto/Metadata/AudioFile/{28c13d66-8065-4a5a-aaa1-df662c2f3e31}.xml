@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{28c13d66-8065-4a5a-aaa1-df662c2f3e31}">
 		<property name="assetPath">
-			<value>linterna.wav</value>
+			<value>Audios extra/linterna.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
