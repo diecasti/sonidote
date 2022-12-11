@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{8aa3fde8-3069-4aa9-a7a6-4e654bfeeaeb}">
+		<property name="name">
+			<value>Dentro Cascada</value>
+		</property>
+		<relationship name="folder">
+			<destination>{97686484-6248-43bf-9ba5-ce107c622f1e}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{1e086171-33ab-4b99-9291-6296a6c1a2b7}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{1e086171-33ab-4b99-9291-6296a6c1a2b7}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>
