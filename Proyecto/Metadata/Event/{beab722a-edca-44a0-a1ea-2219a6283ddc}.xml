@@ -40,6 +40,7 @@
 			<destination>{967f11fb-0888-49a7-9c65-9a7392c35405}</destination>
 		</relationship>
 		<relationship name="parameters">
+			<destination>{9a1267df-0cbf-48ae-aa46-ffe7ca0c773e}</destination>
 			<destination>{e1877105-d35c-480c-9418-a8d0d7905eea}</destination>
 			<destination>{2083f41d-cc91-4141-9cf1-c9b10b897bbd}</destination>
 			<destination>{1c5201a6-79a5-4adc-8c1e-b21b1569a4c1}</destination>
@@ -47,7 +48,6 @@
 			<destination>{a6b4e9c9-c05d-481e-84ed-ac721e184d4e}</destination>
 			<destination>{e7560485-0045-4127-8d69-890e47a87dff}</destination>
 			<destination>{6da24f01-7e19-4401-8b07-9053f23a2bca}</destination>
-			<destination>{9a1267df-0cbf-48ae-aa46-ffe7ca0c773e}</destination>
 		</relationship>
 		<relationship name="banks">
 			<destination>{571ad3ff-1fd9-49a5-baef-abe0af670994}</destination>
@@ -192,6 +192,17 @@
 			<destination>{39ebb849-211c-4a51-84a6-7a3774763b2d}</destination>
 		</relationship>
 	</object>
+	<object class="ParameterProxy" id="{9a1267df-0cbf-48ae-aa46-ffe7ca0c773e}">
+		<relationship name="modules">
+			<destination>{f49b6454-94b7-4fa4-b948-596a8edb0661}</destination>
+			<destination>{3919b2e9-51b8-4fe9-ac04-1b708ad75f2e}</destination>
+			<destination>{110d22a4-f088-4220-a563-eb00467204a1}</destination>
+			<destination>{a3dac2b9-967a-447d-aa0c-5a41fb34824a}</destination>
+		</relationship>
+		<relationship name="preset">
+			<destination>{b83994bd-1775-4f0c-a626-8f316badd2da}</destination>
+		</relationship>
+	</object>
 	<object class="ParameterProxy" id="{e1877105-d35c-480c-9418-a8d0d7905eea}">
 		<relationship name="preset">
 			<destination>{eccdcb95-f672-4bb0-9598-d2de553b3f63}</destination>
@@ -225,17 +236,6 @@
 	<object class="ParameterProxy" id="{6da24f01-7e19-4401-8b07-9053f23a2bca}">
 		<relationship name="preset">
 			<destination>{cb3b49d4-9926-4416-9803-ac51ea1f1f87}</destination>
-		</relationship>
-	</object>
-	<object class="ParameterProxy" id="{9a1267df-0cbf-48ae-aa46-ffe7ca0c773e}">
-		<relationship name="modules">
-			<destination>{f49b6454-94b7-4fa4-b948-596a8edb0661}</destination>
-			<destination>{3919b2e9-51b8-4fe9-ac04-1b708ad75f2e}</destination>
-			<destination>{110d22a4-f088-4220-a563-eb00467204a1}</destination>
-			<destination>{a3dac2b9-967a-447d-aa0c-5a41fb34824a}</destination>
-		</relationship>
-		<relationship name="preset">
-			<destination>{b83994bd-1775-4f0c-a626-8f316badd2da}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{270e4f70-0819-4406-997d-b8ea2e99b088}">

@@ -5,7 +5,7 @@
 			<value>guitarra 2</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{fc2d90aa-3136-408b-91a0-0bd50298e23f}</destination>
@@ -845,9 +845,11 @@
 	<object class="MixerBusEffectChain" id="{a6aaaa6b-c388-4bf3-a22e-a0a1ae553e1a}">
 		<relationship name="effects">
 			<destination>{8448b3f3-eb9e-42ee-b922-ea0a0d2cae6d}</destination>
+			<destination>{f4b35b81-6062-4560-857d-1cfdca2b8799}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{53f5b764-37bd-4614-9cc5-cb1615f6d726}" />
 	<object class="MixerBusFader" id="{4fdc0842-c153-48ae-b307-c1863be852b5}" />
 	<object class="MixerBusFader" id="{8448b3f3-eb9e-42ee-b922-ea0a0d2cae6d}" />
+	<object class="SpatialiserEffect" id="{f4b35b81-6062-4560-857d-1cfdca2b8799}" />
 </objects>
