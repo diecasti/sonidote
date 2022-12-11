@@ -9,25 +9,22 @@ public class Casco : MonoBehaviour
     [SerializeField]
     Volume post_procesado;
 
+    [SerializeField]
     GameObject luz;
+
     Animator anim;
-    bool abierto = true;
-    bool luz_activa = true;
+    bool abierto = false;
+    bool luz_activa = false;
 
     LensDistortion Distorsion;
 
-    FMOD.Studio.EventInstance abrir;
-    FMOD.Studio.EventInstance cerrar;
     FMOD.Studio.EventInstance respiracion;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
-        luz = transform.GetChild(0).gameObject;
-        abrir = FMODUnity.RuntimeManager.CreateInstance("event:/abrir_casco");
-        cerrar = FMODUnity.RuntimeManager.CreateInstance("event:/cerrar_casco");
-        respiracion = FMODUnity.RuntimeManager.CreateInstance("event:/respirar");
+        respiracion = FMODUnity.RuntimeManager.CreateInstance("event:/personaje/Aparejos/respirar");
     }
 
     // Update is called once per frame
@@ -44,7 +41,7 @@ public class Casco : MonoBehaviour
             abierto = !abierto;
             anim.SetBool("cerrado",abierto);
         }
-        if (!abierto)
+        if (abierto)
         {
             // Linterna
             if(Input.GetKeyDown(KeyCode.R))
@@ -67,19 +64,19 @@ public class Casco : MonoBehaviour
 
     void sonido_abrir()
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/abrir_casco");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/personaje/Aparejos/abrir_casco");
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("casco",0,true);
         respiracion.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
     void sonido_cerrar()
     {
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("casco",1,true);
-        FMODUnity.RuntimeManager.PlayOneShot("event:/cerrar_casco");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/personaje/Aparejos/cerrar_casco");
         respiracion.start();
     }
 
     void sonido_linterna()
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/linterna");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/personaje/Aparejos/linterna");
     }
 }

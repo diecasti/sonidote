@@ -419,10 +419,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Sounds.bank
   Name: Sounds
   StudioPath: bank:/Sounds
-  lastModified: 638063991704137638
+  lastModified: 638064009559991231
   FileSizes:
   - Name: Desktop
-    Value: 43109248
+    Value: 43095808
   Exists: 1
 --- !u!114 &-2885577641651782460
 MonoBehaviour:
@@ -675,7 +675,7 @@ MonoBehaviour:
   - {fileID: -4577728602309866515}
   StringsBanks:
   - {fileID: 301143784063883820}
-  cacheTime: 638063991704137638
+  cacheTime: 638064009559991231
   cacheVersion: 131593
 --- !u!114 &16843137379069077
 MonoBehaviour:
@@ -982,7 +982,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -2950281596854180055}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
