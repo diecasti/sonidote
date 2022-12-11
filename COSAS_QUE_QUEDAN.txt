@@ -1,6 +1,5 @@
 -SIGNAL SU VIEJA
 	-Sacar / esconder pistola
-	-Sonidos de las rocas y vainas 
 
 -MÚSICA BIEN PUESTA
 

@@ -8,8 +8,6 @@ public class A_Bosque : MonoBehaviour
     [SerializeField]
     Transform jugador;
 
-    [SerializeField]
-    TextMeshProUGUI distancia_t;
 
     [SerializeField]
     float maxRad = 70;
@@ -44,7 +42,7 @@ public class A_Bosque : MonoBehaviour
             {
                 valor_volumen = ((distancia - center) / maxRad);
                 ambiente_bosque.EventInstance.setParameterByName("distancia_bosque", valor_volumen);
-                Debug.Log("Dentro: " + valor_volumen);
+                //Debug.Log("Dentro: " + valor_volumen);
                 //return 1;
             }
         }

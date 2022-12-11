@@ -58,10 +58,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Dentro Cascada
+  m_Name: parameter:/Cascada_In
   m_EditorClassIdentifier: 
-  Name: Dentro Cascada
-  StudioPath: parameter:/dentro Cascada
+  Name: Cascada_In
+  StudioPath: parameter:/Cascada_In
   Min: 0
   Max: 1
   Default: 0
@@ -215,7 +215,7 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638063747617988949
+  lastModified: 638063771475479659
   FileSizes:
   - Name: Desktop
     Value: 2199392
@@ -314,10 +314,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Sounds.bank
   Name: Sounds
   StudioPath: bank:/Sounds
-  lastModified: 638063747734790305
+  lastModified: 638063771484087079
   FileSizes:
   - Name: Desktop
-    Value: 39956128
+    Value: 39956608
   Exists: 1
 --- !u!114 &-2782432118289581050
 MonoBehaviour:
@@ -635,7 +635,7 @@ MonoBehaviour:
   - {fileID: -4577728602309866515}
   StringsBanks:
   - {fileID: 301143784063883820}
-  cacheTime: 638063747734790305
+  cacheTime: 638063771484087079
   cacheVersion: 131593
 --- !u!114 &301143784063883820
 MonoBehaviour:
@@ -652,10 +652,10 @@ MonoBehaviour:
   Path: Proyecto/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638063747618023975
+  lastModified: 638063771475509694
   FileSizes:
   - Name: Desktop
-    Value: 2644
+    Value: 2636
   Exists: 1
 --- !u!114 &590449010481064970
 MonoBehaviour:
