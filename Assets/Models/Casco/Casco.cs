@@ -41,18 +41,10 @@ public class Casco : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E))
         {
             //configuracion_casco();
-
-            if (abierto)
-            {
-                anim.SetTrigger("close");
-            }
-            else
-            {
-                anim.SetTrigger("open");
-            }
             abierto = !abierto;
+            anim.SetBool("cerrado",abierto);
         }
-        if(!abierto)
+        if (!abierto)
         {
             // Linterna
             if(Input.GetKeyDown(KeyCode.R))

@@ -17,6 +17,9 @@ public class SignalCatcher : MonoBehaviour
     private
     bool active = false;
 
+    [SerializeField]
+    Animator anim;
+
 
 
     // Start is called before the first frame update
@@ -33,7 +36,18 @@ public class SignalCatcher : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.T))
         {
+
+            //if (active)
+            //{
+            //    anim.SetTrigger("close");
+            //}
+            //else
+            //{
+            //    anim.SetTrigger("open");
+            //}
             active = !active;
+            anim.SetBool("cerrado", active);
+
             signals.setParameterByName("CatcherOn", active ? 1 : 0.04f);
         }
 
