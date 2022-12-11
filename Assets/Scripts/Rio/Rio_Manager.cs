@@ -24,6 +24,11 @@ public class Rio_Manager : MonoBehaviour
     [SerializeField]
     float velocidad = 1f;
 
+    //radios del rio
+    [SerializeField]
+    float maxRad = 30;
+    float center = 10;
+     
     void Start()
     {
         rio_emisor = rio.GetComponent<FMODUnity.StudioEventEmitter>();
@@ -63,26 +68,32 @@ public class Rio_Manager : MonoBehaviour
 
         // Calculamos la espacialidad del emisor
         float distancia_con_jugador = Vector3.Distance(actual_pos_jugador, rio.transform.position);
-        if (distancia_con_jugador < 30)
+
+
+        if (distancia_con_jugador <= maxRad)
         {
-            rio_emisor.EventInstance.setParameterByName("rio_espacio", 1 - (distancia_con_jugador / 10));
-            Debug.Log("Dentro: " + (1 - (distancia_con_jugador / 10)));
+            //dentro
+            if (distancia_con_jugador > center)
+            {
+                float a = 1.0f + ((center - distancia_con_jugador) / center);
+                rio_emisor.EventInstance.setParameterByName("rio_espacio", a);
+                //Debug.Log("Dentro: " + a);
+
+                //return a;
+            }
+            else
+            {
+                rio_emisor.EventInstance.setParameterByName("rio_espacio", 1);
+                //Debug.Log("Dentro");
+
+                //return 1;
+            }
         }
         else
         {
-            rio_emisor.EventInstance.setParameterByName("rio_espacio", 1);
-            Debug.Log("Fuera");
+            rio_emisor.EventInstance.setParameterByName("rio_espacio", 0);
+            //Debug.Log("Fuera");
+
         }
-
-        
-
-
-        /*if (t < 1)
-        { // while t below the end limit...
-          // increment it at the desired rate every update:
-            t += Time.deltaTime / duration;
-        }*/
-
-
     }
 }
