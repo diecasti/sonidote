@@ -630,7 +630,7 @@ public class FirstPersonController : MonoBehaviour
     {
         emisor_pasos.Play();
         tipo_pisada material_terreno = footstep_swapper.CheckLayers();
-        Debug.Log(material_terreno);
+        //Debug.Log(material_terreno);
         emisor_pasos.EventInstance.setParameterByName("terreno", (int)material_terreno);
 
         if(isSprinting)

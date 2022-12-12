@@ -37,6 +37,7 @@ public class A_Cascada : MonoBehaviour
                 {
                     valor = 1 - ((distancia - center) / maxRad);
                     FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Cascada_In", valor, true);
+                    Debug.Log(valor);
                 }
             }
             else

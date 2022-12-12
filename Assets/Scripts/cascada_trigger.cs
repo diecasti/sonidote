@@ -9,11 +9,15 @@ public class cascada_trigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Cascada_In", 1, true);
+
         elScript.inside = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Cascada_In", 0, true);
+
         elScript.inside = false;
     }
 

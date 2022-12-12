@@ -24,7 +24,7 @@ public class Casco : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        respiracion = FMODUnity.RuntimeManager.CreateInstance("event:/personaje/Aparejos/respirar");
+        respiracion = FMODUnity.RuntimeManager.CreateInstance("event:/personaje/respirar");
     }
 
     // Update is called once per frame
